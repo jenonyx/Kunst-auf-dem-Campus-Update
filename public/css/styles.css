@@ -1,0 +1,64 @@
+.color-scheme{
+    background: rgba(69, 140, 133, 0.8);
+}
+
+.accordion > *{
+  background: rgba(69, 140, 133, 0.70);
+
+}
+
+.full-img{
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  background-image: url(/Images/keramikwand.jpeg);
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image .copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 712px;
+  height: 214px;
+  background-color: rgba(69, 140, 133, 0.70);
+}
+
+.image .page-title {
+  display: flex;
+  flex-direction: column;
+  width: 728px;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-left: 16.00px;
+}
+
+.image .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  margin-left: 5px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 64px;
+  letter-spacing: -1.28px;
+  line-height: normal;
+}
+
+
+.card:hover{
+  transform: scaleX(1.1) scaleY(1.1);
+}
