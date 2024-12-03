@@ -62,3 +62,16 @@
 .card:hover{
   transform: scaleX(1.1) scaleY(1.1);
 }
+
+.carousel-indicators .active {
+  background-color: #6c757d !important;
+}
+
+.carousel-indicators button {
+  background-color: #adb5bd !important;
+  border: none;
+}
+
+.carousel-indicators button:hover {
+  background-color: #6c757d;
+}
