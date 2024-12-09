@@ -1,6 +1,6 @@
 <% layout('/layout/boilerplate.ejs') %>
 
-<div class="image my-4">
+<div class="image my-0">
   <div class="copy">
     <div class="page-title" data-aos="fade-up">
       <div class="text-wrapper">Kunst auf dem Campus</div>
@@ -43,114 +43,74 @@
   </div>
 </div>
 
-<div class="container my-3" data-aos="fade-up">
+<div class="container py-3" data-aos="fade-up">
   <div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-indicators">
-      <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active btn-secondary" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="btn-secondary" aria-label="Slide 2"></button>
-      <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="btn-secondary" aria-label="Slide 3"></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active btn-secondary"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        class="btn-secondary"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+        class="btn-secondary"
+        aria-label="Slide 3"
+      ></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card" id="carousel-card-1">
+            <div class="card clickable" id="carousel-card-1">
               <img
                 class="img-fluid"
                 alt="100%x280"
-                src="/Images/galaxie.jpeg"
+                src="/Bilderkarussell/galaxie.jpeg"
               />
               <div class="card-body">
-                <h4 class="card-title">Special title treatment</h4>
+                <h4 class="card-title">Fotodruck</h4>
                 <p class="card-text">
-                  With supporting text below as a natural lead-in
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card clickable" id="carousel-card-2">
               <img
                 class="img-fluid"
                 alt="100%x280"
-                src="/Images/galaxie.jpeg"
+                src="/Bilderkarussell/guernica.jpg"
               />
               <div class="card-body">
-                <h4 class="card-title">Special title treatment</h4>
+                <h4 class="card-title">Reproduktion</h4>
                 <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card clickable" id="carousel-card-3">
               <img
                 class="img-fluid"
                 alt="100%x280"
-                src="/Images/galaxie.jpeg"
+                src="/Bilderkarussell/keramikwand.jpg"
               />
               <div class="card-body">
-                <h4 class="card-title">Special title treatment</h4>
+                <h4 class="card-title">keramikwand</h4>
                 <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        
-      </div>
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                class="img-fluid"
-                alt="100%x280"
-                src="/Images/galaxie.jpeg"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Special title treatment</h4>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                class="img-fluid"
-                alt="100%x280"
-                src="/Images/galaxie.jpeg"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Special title treatment</h4>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                class="img-fluid"
-                alt="100%x280"
-                src="/Images/galaxie.jpeg"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Special title treatment</h4>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
+ 
                 </p>
               </div>
             </div>
@@ -160,49 +120,95 @@
       <div class="carousel-item">
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card clickable" id="carousel-card-4">
               <img
                 class="img-fluid"
                 alt="100%x280"
-                src="/Images/galaxie.jpeg"
+                src="/Bilderkarussell/skulptur.jpg"
               />
               <div class="card-body">
-                <h4 class="card-title">Special title treatment</h4>
+                <h4 class="card-title">Skulptur</h4>
                 <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
+
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card clickable" id="carousel-card-5">
               <img
                 class="img-fluid"
                 alt="100%x280"
-                src="/Images/galaxie.jpeg"
+                src="/Bilderkarussell/freifläche.jpg"
               />
               <div class="card-body">
-                <h4 class="card-title">Special title treatment</h4>
+                <h4 class="card-title">Graffiti Freifläche</h4>
                 <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
+
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card clickable" id="carousel-card-6">
               <img
                 class="img-fluid"
                 alt="100%x280"
-                src="/Images/galaxie.jpeg"
+                src="/Bilderkarussell/graffiti.jpg"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Illegale Graffiti</h4>
+                <p class="card-text">
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card clickable" id="carousel-card-7">
+              <img
+                class="img-fluid"
+                alt="100%x280"
+                src="/Bilderkarussell/wolken.jpg"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Gebäude-Verschönerung</h4>
+                <p class="card-text">
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card clickable" id="carousel-card-8">
+              <img
+                class="img-fluid"
+                alt="100%x280"
+                src="/Bilderkarussell/chile.jpg"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Wandmalerei</h4>
+                <p class="card-text">
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card clickable" id="carousel-card-9">
+              <img
+                class="img-fluid"
+                alt="100%x280"
+                src="/Bilderkarussell/galaxie.jpeg"
               />
               <div class="card-body">
                 <h4 class="card-title">Special title treatment</h4>
                 <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
+
                 </p>
               </div>
             </div>
@@ -210,15 +216,36 @@
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
 </div>
 
+<!-- Div to display description -->
+<div id="description-display" class="container description-box text-center">
+  <div class="row">
+    <div class="col">
+      <p class="mx-3" id="description-text"></p>
+    </div>
+    <div class="col">
+      
+    </div>
+  </div>
 
+</div>

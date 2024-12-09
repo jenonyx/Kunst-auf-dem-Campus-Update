@@ -1,5 +1,24 @@
-<footer class="footer bg-dark py-3 mt-auto">
-    <div class="container">
-      <h3 class="text-secondary">Kunst auf dem Campus</h3>
-    </div>
-  </footer>
+<footer class="footer py-3 mt-auto color-scheme">
+  <div class="container-fluid">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a 
+          class="nav-link <%= activePage === 'impressum' ? 'active' : '' %>" 
+          href="<%= navLinks.impressum %>"
+        >Impressum</a>
+      </li>
+      <li class="nav-item">
+        <a 
+          class="nav-link <%= activePage === 'datenschutz' ? 'active' : '' %>" 
+          href="<%= navLinks.datenschutz %>"
+        >Datenschutz</a>
+      </li>
+      <li class="nav-item">
+        <a 
+          class="nav-link <%= activePage === 'quellen' ? 'active' : '' %>" 
+          href="<%= navLinks.quellen %>"
+        >Quellen</a>
+      </li>
+    </ul>
+  </div>
+</footer>

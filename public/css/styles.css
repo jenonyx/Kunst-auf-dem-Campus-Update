@@ -2,24 +2,27 @@
     background: rgba(69, 140, 133, 0.8);
 }
 
+.color-scheme-text{
+  color: rgba(69, 140, 133);
+}
+
+p{
+  color: #3f3f3f;
+}
+
 .accordion > *{
   background: rgba(69, 140, 133, 0.70);
 
 }
 
-.full-img{
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-
 .image {
+  margin-top: 0;
   position: relative;
   width: 100%;
-  height: 650px;
+  height: 100vh; /* Height scales with viewport height */
   background-image: url(/Images/keramikwand.jpeg);
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: center; /* Center the image for better scaling */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,34 +32,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 712px;
-  height: 214px;
+  width: 70%; /* Adjust width to be a percentage of the screen */
+  padding: 2rem; /* Add padding for spacing instead of fixed height */
   background-color: rgba(69, 140, 133, 0.70);
 }
 
 .image .page-title {
   display: flex;
   flex-direction: column;
-  width: 728px;
   align-items: flex-start;
-  gap: 24px;
-  position: relative;
+  gap: 1.5rem; /* Relative spacing */
   flex: 0 0 auto;
-  margin-left: 16.00px;
+  margin-left: 1rem; /* Use relative margin */
 }
 
 .image .text-wrapper {
   position: relative;
   align-self: stretch;
-  margin-top: -1.00px;
-  margin-left: 5px;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: #ffffff;
-  font-size: 64px;
-  letter-spacing: -1.28px;
-  line-height: normal;
+  font-size: 5vw; /* Font size scales with viewport width */
+  letter-spacing: -0.02em; /* Scaled relative letter spacing */
+  line-height: 1.2; /* Use relative line height */
+  margin-left: 0.5rem; /* Use relative margin */
 }
+
 
 
 .card:hover{
@@ -74,4 +75,23 @@
 
 .carousel-indicators button:hover {
   background-color: #6c757d;
+}
+
+
+
+.footer .nav-link {
+  color: #cdcbcb; /* Default link color */
+  margin: 0 10px; /* Spacing between links */
+}
+
+.footer .nav-link.active {
+  color: #ffffff; /* Highlight active link */
+  font-weight: bold;
+}
+
+
+.map{
+  
+  width: 100%;
+  height: 100vh; /* Height scales with viewport height */
 }
