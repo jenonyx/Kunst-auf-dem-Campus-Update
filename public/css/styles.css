@@ -104,5 +104,31 @@ p{
   color: #adb5bd;
 }
 
+/* Hintergrundfarbe grau für den Container */
+.custom-bg-grey {
+  background-color: rgb(224, 222, 222);
+}
+
+/* Zentrierung des Containers */
+.centered-text {
+  display: flex;
+  flex-direction: column; /* Inhalte untereinander anordnen */
+  align-items: center; /* Zentriert Inhalte horizontal */
+  justify-content: center; /* Zentriert Inhalte vertikal */
+  text-align: center; /* Text horizontal zentrieren */
+  height: 100%; /* Nimmt die gesamte Höhe des Containers ein */
+  margin: auto; /* Gleicher Abstand nach oben und unten */
+  gap: 1rem; /* Optional: Abstand zwischen Absätzen */
+}
+
+
+/* Text-Container für zusätzliche Flexibilität */
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertikale Zentrierung des Textes */
+  width: 90%; /* 95% der Breite des Containers */
+}
+
 
 
