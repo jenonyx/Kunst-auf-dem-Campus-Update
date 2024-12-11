@@ -1,13 +1,13 @@
 .color-scheme{
-    background: rgba(69, 140, 133, 0.8);
+    background: rgba(69, 140, 133, 0.8);  /* Main color for navbar, footbar etc.*/
 }
 
 .color-scheme-text{
-  color: rgba(69, 140, 133);
+  color: rgba(69, 140, 133); /* Main color for headings etc.*/
 }
 
 p{
-  color: #3f3f3f;
+  color: #3f3f3f; /* Main color for text elements */
 }
 
 .accordion > *{
@@ -15,7 +15,7 @@ p{
 
 }
 
-.image {
+.image {    /* Styles for the Home page title image */
   margin-top: 0;
   position: relative;
   width: 100%;
@@ -61,20 +61,20 @@ p{
 
 
 .card:hover{
-  transform: scaleX(1.1) scaleY(1.1);
+  transform: scaleX(1.1) scaleY(1.1); /* zoom effect on card that is being hovered */
 }
 
 .carousel-indicators .active {
-  background-color: #6c757d !important;
+  background-color: #6c757d !important; /*design of bottom indicators of image carousel */
 }
 
 .carousel-indicators button {
-  background-color: #adb5bd !important;
+  background-color: #adb5bd !important; 
   border: none;
 }
 
 .carousel-indicators button:hover {
-  background-color: #6c757d;
+  background-color: #6c757d;  /*hover effect of bottom indicators of image carousel */
 }
 
 
@@ -127,8 +127,13 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertikale Zentrierung des Textes */
-  width: 90%; /* 95% der Breite des Containers */
+  width: 80%; /* 80% der Breite des Containers */
 }
 
+#navbar-span{
+  width: 50%;   /*make the default span width smaller for a more centered positioning of navbar links */
+}
 
-
+.nav-links-text > *{
+  font-size: x-large; /*larger text size for navbar links */
+}
