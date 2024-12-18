@@ -43,6 +43,7 @@
   </div>
 </div>
 
+<!--Image Carousell with clickable cards-->
 <div class="container py-3" data-aos="fade-up">
   <div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-indicators">
@@ -73,7 +74,7 @@
       <div class="carousel-item active">
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card clickable" id="carousel-card-1">
+            <div class="card clickable" data-card-id="1">
               <img
                 class="img-fluid"
                 alt="100%x280"
@@ -81,13 +82,12 @@
               />
               <div class="card-body">
                 <h4 class="card-title">Fotodruck</h4>
-                <p class="card-text">
-                </p>
+                <p class="card-text"></p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card clickable" id="carousel-card-2">
+            <div class="card clickable" data-card-id="2" id="carousel-card-2">
               <img
                 class="img-fluid"
                 alt="100%x280"
@@ -95,13 +95,12 @@
               />
               <div class="card-body">
                 <h4 class="card-title">Reproduktion</h4>
-                <p class="card-text">
-                </p>
+                <p class="card-text"></p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card clickable" id="carousel-card-3">
+            <div class="card clickable" data-card-id="3" id="carousel-card-3">
               <img
                 class="img-fluid"
                 alt="100%x280"
@@ -109,9 +108,7 @@
               />
               <div class="card-body">
                 <h4 class="card-title">keramikwand</h4>
-                <p class="card-text">
- 
-                </p>
+                <p class="card-text"></p>
               </div>
             </div>
           </div>
@@ -120,7 +117,7 @@
       <div class="carousel-item">
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card clickable" id="carousel-card-4">
+            <div class="card clickable" data-card-id="4" id="carousel-card-4">
               <img
                 class="img-fluid"
                 alt="100%x280"
@@ -128,14 +125,12 @@
               />
               <div class="card-body">
                 <h4 class="card-title">Skulptur</h4>
-                <p class="card-text">
-
-                </p>
+                <p class="card-text"></p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card clickable" id="carousel-card-5">
+            <div class="card clickable" data-card-id="5" id="carousel-card-5">
               <img
                 class="img-fluid"
                 alt="100%x280"
@@ -143,14 +138,12 @@
               />
               <div class="card-body">
                 <h4 class="card-title">Graffiti Freifläche</h4>
-                <p class="card-text">
-
-                </p>
+                <p class="card-text"></p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card clickable" id="carousel-card-6">
+            <div class="card clickable" data-card-id="6" id="carousel-card-6">
               <img
                 class="img-fluid"
                 alt="100%x280"
@@ -158,9 +151,7 @@
               />
               <div class="card-body">
                 <h4 class="card-title">Illegale Graffiti</h4>
-                <p class="card-text">
-
-                </p>
+                <p class="card-text"></p>
               </div>
             </div>
           </div>
@@ -169,7 +160,7 @@
       <div class="carousel-item">
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card clickable" id="carousel-card-7">
+            <div class="card clickable" data-card-id="7" id="carousel-card-7">
               <img
                 class="img-fluid"
                 alt="100%x280"
@@ -177,14 +168,12 @@
               />
               <div class="card-body">
                 <h4 class="card-title">Gebäude-Verschönerung</h4>
-                <p class="card-text">
-
-                </p>
+                <p class="card-text"></p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card clickable" id="carousel-card-8">
+            <div class="card clickable" data-card-id="8" id="carousel-card-8">
               <img
                 class="img-fluid"
                 alt="100%x280"
@@ -192,14 +181,12 @@
               />
               <div class="card-body">
                 <h4 class="card-title">Wandmalerei</h4>
-                <p class="card-text">
-
-                </p>
+                <p class="card-text"></p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card clickable" id="carousel-card-9">
+            <div class="card clickable" data-card-id="9" id="carousel-card-9">
               <img
                 class="img-fluid"
                 alt="100%x280"
@@ -207,9 +194,7 @@
               />
               <div class="card-body">
                 <h4 class="card-title">Special title treatment</h4>
-                <p class="card-text">
-
-                </p>
+                <p class="card-text"></p>
               </div>
             </div>
           </div>
@@ -237,15 +222,24 @@
   </div>
 </div>
 
-<!-- Div to display description -->
-<div id="description-display" class="container description-box text-center">
-  <div class="row">
-    <div class="col">
-      <p class="mx-3" id="description-text"></p>
-    </div>
-    <div class="col">
-      
-    </div>
-  </div>
+<!-- Div to display each image's title, description and set the image itself as the background-->
+<div id="description-display" class="description-box text-center hidden">
+  <div class="container">
+      <div class="row mx-5">
+        <div class="col-12 col-md-3 custom-bg-grey-opaque mx-3 my-3">
+          <div class="centered-text">
+            <h3 class="color-scheme-text" id="title-text"></h3>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 custom-bg-grey-opaque mx-3 my-3">
+          <div
+            class="d-flex flex-row align-items-center ">
+            <img src="/Icons/Arrow_smaller.png" alt="arrow icon"/>
+            <p class="mx-3" id="description-text"></p>
+          </div>
+          <img src="/Bilderkarussell/galaxie.jpeg"  class="img-fluid" alt="">
 
+        </div>
+      </div>
+  </div>
 </div>

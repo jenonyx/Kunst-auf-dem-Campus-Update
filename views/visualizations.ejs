@@ -1,10 +1,10 @@
 <% layout('/layout/boilerplate.ejs') %>
 <div class="container text-center">
-  <h1> Visualisierungen</h1>
+  <h1>Visualisierungen</h1>
   <div id="accordion">
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="card my-3" style="background-color: #d8f3dc;">
+        <div class="card my-3" style="background-color: #d8f3dc">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
               <button
@@ -30,13 +30,18 @@
                 class="flourish-embed flourish-gantt"
                 data-src="visualisation/20429865"
               >
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <noscript
-                  ><img
-                    src="https://public.flourish.studio/visualisation/20429865/thumbnail"
+                <script
+                  src="https://public.flourish.studio/resources/embed.js"
+                  onerror="this.outerHTML = '<img src=\'/Visualisierungen_Screenshots/Visualisierungen_Flourish_Aufstellungszeiträume.jpg\' alt=\'Fallback Gantt Chart\' style=\'width: 100%;\' >'"
+                ></script>
+                <!-- Fallback Screenshot -->
+                <noscript>
+                  <img
+                    src="/Visualisierungen_Screenshots/Visualisierungen_Flourish_Aufstellungszeiträume.jpg"
                     width="100%"
                     alt="gantt visualization"
-                /></noscript>
+                  />
+                </noscript>
               </div>
             </div>
           </div>
@@ -182,6 +187,7 @@
               data-parent="#accordion"
             >
               <div class="card-body">
+
                 <div
                   class="flourish-embed flourish-bar-chart-race"
                   data-src="visualisation/20447741"
