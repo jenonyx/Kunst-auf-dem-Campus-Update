@@ -111,3 +111,31 @@
 .card:active {
   transform: scale(0.95) rotateZ(1.7deg);
 }*/
+
+@import 'colors.css';
+
+
+.card:hover{
+  transform: scaleX(1.1) scaleY(1.1); /* zoom effect on card that is being hovered */
+}
+
+#visualization_card_1, #visualization_card_4 {
+  background-color: var(--color-matching-gradient-3);
+}
+
+#visualization_card_2, #visualization_card_5 {
+  background-color: var(--color-matching-gradient-4);
+}
+
+#visualization_card_3, #visualization_card_6 {
+  background-color: var(--color-matching-gradient-5);
+}
+
+#visualization_card_1 .btn,
+#visualization_card_2 .btn,
+#visualization_card_3 .btn,
+#visualization_card_4 .btn,
+#visualization_card_5 .btn,
+#visualization_card_6 .btn {
+  color: white;
+}
