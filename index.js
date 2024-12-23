@@ -16,7 +16,8 @@ const navLinks = {
     home: '/',
     map: '/map',
     visualizations: '/visualizations',
-    about: '/about'
+    about: '/about',
+    quellen: '/quellen'
 };
   
 
@@ -39,6 +40,11 @@ app.get('/visualizations', (req, res) => {
 app.get('/about', (req, res) => {
     let activePage = 'about';
     res.render('about', { navLinks, activePage });
+});
+
+app.get('/quellen', (req, res) => {
+    let activePage = 'quellen';
+    res.render('quellen', { navLinks, activePage });
 });
 
 

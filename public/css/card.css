@@ -114,21 +114,35 @@
 
 @import 'colors.css';
 
+.card-header{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .card:hover{
-  transform: scaleX(1.1) scaleY(1.1); /* zoom effect on card that is being hovered */
+  transform: scaleX(1.08) scaleY(1.08); /* zoom effect on card that is being hovered */
+  transition: all 0.3s ease;
 }
 
 #visualization_card_1, #visualization_card_4 {
   background-color: var(--color-matching-gradient-3);
+  background: linear-gradient(90deg, var(--color-matching-gradient-3), var(--color-matching-gradient-4) );
+
+  box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
 }
 
 #visualization_card_2, #visualization_card_5 {
   background-color: var(--color-matching-gradient-4);
+  background: linear-gradient(90deg, var(--color-matching-gradient-4), var(--color-matching-gradient-5) );
+  box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
 }
 
 #visualization_card_3, #visualization_card_6 {
   background-color: var(--color-matching-gradient-5);
+  background: linear-gradient(90deg, var(--color-matching-gradient-5), var(--color-matching-gradient-6) );
+  box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
 }
 
 #visualization_card_1 .btn,
@@ -138,4 +152,5 @@
 #visualization_card_5 .btn,
 #visualization_card_6 .btn {
   color: white;
+  font-size: large;
 }

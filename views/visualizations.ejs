@@ -2,13 +2,16 @@
 <h1 class="color-scheme-text custom-bg-grey text-center">Visualisierungen</h1>
 <div class="container text-center">
   <div id="accordion">
+
     <div class="row">
-      <h2 class="mt-4 color-scheme-text ">
+      <h2 class="mt-4 color-scheme-text">
         Wissenswertes über die Kunst auf dem Campus:
       </h2>
     </div>
+
+    <!--First Card:-->
     <div class="row">
-      <div class="col-12 col-lg-6">
+      <div class="col col-lg-6 ">
         <div class="card my-3" id="visualization_card_1">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
@@ -52,8 +55,11 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="col-12 col-lg-6">
+    <!--Second Card:-->
+    <div class="row">
+      <div class="col col-lg-6 offset-lg-3">
         <div class="card my-3" id="visualization_card_2">
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
@@ -91,8 +97,11 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="col-12 col-lg-6">
+    <!--Third Card:-->
+    <div class="row">
+      <div class="col-12 col-lg-6 offset-lg-6">
         <div class="card my-3" id="visualization_card_3">
           <div class="card-header" id="headingThree">
             <h5 class="mb-0">
@@ -130,122 +139,131 @@
           </div>
         </div>
       </div>
-      <h2 class="mt-4 color-scheme-text">
-        Wissenswertes über die Künstler:
-      </h2>
-      <div class="row">
-        <div class="col-12 col-lg-6">
-          <div class="card my-3" id="visualization_card_4">
-            <div class="card-header" id="headingFour">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#collapseFour"
-                  aria-expanded="true"
-                  aria-controls="collapseFour"
-                >
-                  Wie heißen die Künstler?
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseFour"
-              class="collapse show"
-              aria-labelledby="headingFour"
-              data-parent="#accordion"
-            >
-              <div class="card-body">
-                <div
-                  class="flourish-embed flourish-hierarchy"
-                  data-src="visualisation/20444386"
-                >
-                  <script src="https://public.flourish.studio/resources/embed.js"></script>
-                  <noscript
-                    ><img
-                      src="https://public.flourish.studio/visualisation/20444386/thumbnail"
-                      width="100%"
-                      alt="hierarchy visualization"
-                  /></noscript>
-                </div>
+    </div>
+
+    <div class="row">
+      <h2 class="mt-4 color-scheme-text">Wissenswertes über die Künstler:</h2>
+    </div>
+
+    <!--Fourth Card:-->
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="card my-3" id="visualization_card_4">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="true"
+                aria-controls="collapseFour"
+              >
+                Wie heißen die Künstler?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse show"
+            aria-labelledby="headingFour"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <div
+                class="flourish-embed flourish-hierarchy"
+                data-src="visualisation/20444386"
+              >
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript
+                  ><img
+                    src="https://public.flourish.studio/visualisation/20444386/thumbnail"
+                    width="100%"
+                    alt="hierarchy visualization"
+                /></noscript>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="col-12 col-lg-6">
-          <div class="card my-3" id="visualization_card_5">
-            <div class="card-header" id="headingFive">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#collapseFive"
-                  aria-expanded="false"
-                  aria-controls="collapseFive"
-                >
-                  Woher kommen die Künstler?
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseFive"
-              class="collapse"
-              aria-labelledby="headingFive"
-              data-parent="#accordion"
-            >
-              <div class="card-body">
-                <div
-                  class="flourish-embed flourish-bar-chart-race"
-                  data-src="visualisation/20447741"
-                >
-                  <script src="https://public.flourish.studio/resources/embed.js"></script>
-                  <noscript
-                    ><img
-                      src="https://public.flourish.studio/visualisation/20447741/thumbnail"
-                      width="100%"
-                      alt="bar-chart-race visualization"
-                  /></noscript>
-                </div>
+    <!--Fifth Card:-->
+    <div class="row">
+      <div class="col-12 col-lg-6 offset-lg-3">
+        <div class="card my-3" id="visualization_card_5">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Woher kommen die Künstler?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFive"
+            class="collapse"
+            aria-labelledby="headingFive"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <div
+                class="flourish-embed flourish-bar-chart-race"
+                data-src="visualisation/20447741"
+              >
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript
+                  ><img
+                    src="https://public.flourish.studio/visualisation/20447741/thumbnail"
+                    width="100%"
+                    alt="bar-chart-race visualization"
+                /></noscript>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="col-12 col-lg-6">
-          <div class="card my-3" id="visualization_card_6">
-            <div class="card-header" id="headingSix">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#collapseSix"
-                  aria-expanded="false"
-                  aria-controls="collapseSix"
-                >
-                  Welches Geschlecht haben die Künstler?
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseSix"
-              class="collapse"
-              aria-labelledby="headingSix"
-              data-parent="#accordion"
-            >
-              <div class="card-body">
-                <div
-                  class="flourish-embed flourish-pictogram"
-                  data-src="visualisation/20443926"
-                >
-                  <script src="https://public.flourish.studio/resources/embed.js"></script>
-                  <noscript
-                    ><img
-                      src="https://public.flourish.studio/visualisation/20443926/thumbnail"
-                      width="100%"
-                      alt="pictogram visualization"
-                  /></noscript>
-                </div>
+    <!--Sixth Card:-->
+    <div class="row">
+      <div class="col-12 col-lg-6 offset-lg-6">
+        <div class="card my-3" id="visualization_card_6">
+          <div class="card-header" id="headingSix">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                Welches Geschlecht haben die Künstler?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseSix"
+            class="collapse"
+            aria-labelledby="headingSix"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <div
+                class="flourish-embed flourish-pictogram"
+                data-src="visualisation/20443926"
+              >
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript
+                  ><img
+                    src="https://public.flourish.studio/visualisation/20443926/thumbnail"
+                    width="100%"
+                    alt="pictogram visualization"
+                /></noscript>
               </div>
             </div>
           </div>
