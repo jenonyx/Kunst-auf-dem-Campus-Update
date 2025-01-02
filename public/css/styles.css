@@ -147,3 +147,12 @@ p{
 .hidden {
   display: none;
 }
+
+.custom-image {
+  max-height: 150px; /*Make all images */
+  height: auto;
+}
+
+.middle-row {
+  margin-bottom: 20px;
+}
