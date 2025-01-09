@@ -48,31 +48,12 @@ cards.forEach(card => {
 
       descriptionDisplay.classList.remove('hidden'); // Show the description display
       descriptionDisplay.dataset.activeCard = card.dataset.cardId; // Set active card reference
-    }
-
-=======
-// Select all buttons in the accordion
-//VISUALIZAtIONS - Page
-const accordionButtons = document.querySelectorAll("#accordion .btn-link");
-
-// Add click event listener to each button
-accordionButtons.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    // Prevent default behavior
-    event.preventDefault();
-
-    // Get the associated collapsible content
-    const targetId = button.getAttribute("data-target");
-    const content = document.querySelector(targetId);
-
-    // Close all other collapsible elements
-    document.querySelectorAll("#accordion .collapse").forEach((item) => {
-      if (item !== content) {
-        item.classList.remove("show");
-      }
+          // On card click, scroll to the center of the description display
+          descriptionDisplay.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        }
+      });
     });
 
-    // Toggle the 'show' class for the clicked element
-    content.classList.toggle("show");
-  });
-});
