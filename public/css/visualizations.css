@@ -1,0 +1,78 @@
+@import 'colors.css';
+
+.card-header{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#visualization_card_1, #visualization_card_4 {
+  /*background-color: var(--color-matching-gradient-3);*/
+  background: linear-gradient(90deg, var(--color-matching-gradient-3), var(--color-matching-gradient-4) );
+
+  box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
+}
+
+#visualization_card_2, #visualization_card_5 {
+  /*background-color: var(--color-matching-gradient-4);*/
+  background: linear-gradient(90deg, var(--color-matching-gradient-4), var(--color-matching-gradient-5) );
+  box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
+}
+
+#visualization_card_3, #visualization_card_6 {
+  /*background-color: var(--color-matching-gradient-5);*/
+  background: linear-gradient(90deg, var(--color-matching-gradient-5), var(--color-matching-gradient-6) );
+  box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+#visualization_card_1 .btn,
+#visualization_card_2 .btn,
+#visualization_card_3 .btn,
+#visualization_card_4 .btn,
+#visualization_card_5 .btn,
+#visualization_card_6 .btn {
+  color: white;
+  font-size: large;
+}
+
+
+.card:hover {
+  background: var(--color-small-switch-2);
+  transform: scale(1.08); /* Slight zoom */
+  box-shadow: 8px 15px 20px rgba(0, 0, 0, 0.25); /* Depth effect */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+
+
+.card .btn:hover {
+  color: var(--color-main); /* Button hover */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Glow effect */
+  transition: all 0.3s ease;
+}
+
+.custom-image {
+  max-height: 200px; /*Make all images of equal size*/
+  height: auto;
+}
+
+.middle-row {
+  margin-bottom: 70px;
+}
+
+.section-background-1 {
+  background: url("/Illustrationen/beautiful-abstract-background-hand-drawn-water-color-spots.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.section-background-2 {
+  background: url("/Illustrationen/1096.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+}
