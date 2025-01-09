@@ -1,23 +1,69 @@
 <% layout('/layout/boilerplate.ejs') %>
-<h1
-  class="text-center color-scheme-text"
-  style="background-color: rgb(224, 222, 222)"
->
+<h1 class="text-center color-scheme-text custom-bg-grey">
   Entdecke eine Geschichte
 </h1>
-<div class="container">
-  <div class="map">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3059.8708087896466!2d7.260439136230216!3d51.444345489921915!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sde!2sde!4v1733673467913!5m2!1sde!2sde"
-      width="600"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
-  </div>
+<div class="map-container">
+  <img
+    src="/Illustrationen/map.png"
+    alt="Map"
+    style="width: 100%; display: block"
+  />
+  <div
+    class="map-pin"
+    style="top: 30%; left: 20%"
+    data-content="Story 1"
+    data-path="utopie"
+  ></div>
+  <div
+    class="map-pin"
+    style="top: 50%; left: 50%"
+    data-content="Story 2"
+    data-path="parallelwelten"
+  ></div>
+  <div
+    class="map-pin"
+    style="top: 80%; left: 65%"
+    data-content="Story 3"
+    data-path="campussanierung"
+  ></div>
 </div>
 
-<!--TODO: Dynamically change contents of Body depending on the Map Pin Clicked-->
-<%- include('stories/campussanierung.ejs') %>
+<div class="info-box" id="info-box">Click a pin to see the story!</div>
+
+<script>
+  // JavaScript for interactivity
+  const pins = document.querySelectorAll(".map-pin");
+  let activePin = null;
+
+  pins.forEach((pin) => {
+    pin.addEventListener("click", async (e) => {
+      // Remove 'active' class from the previous active pin
+      if (activePin) {
+        activePin.classList.remove("active");
+      }
+
+      // Add 'active' class to the clicked pin
+      activePin = e.target;
+      activePin.classList.add("active");
+
+      // Update the info box with the story content
+      const path = activePin.getAttribute("data-path");
+      const infoBox = document.getElementById("info-box");
+
+      try {
+        // Fetch the EJS-rendered content from the server
+        const response = await fetch(`/stories/${path}`);
+        if (response.ok) {
+          const content = await response.text();
+          infoBox.innerHTML = content;
+          // Scroll to the info box
+          infoBox.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+          infoBox.innerHTML = `<p>Error loading content for ${path}</p>`;
+        }
+      } catch (error) {
+        infoBox.innerHTML = `<p>Failed to load story: ${error.message}</p>`;
+      }
+    });
+  });
+</script>

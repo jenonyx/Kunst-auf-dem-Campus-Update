@@ -1,140 +1,177 @@
 <% layout('/layout/boilerplate.ejs') %>
+<h1 class="color-scheme-text custom-bg-grey text-center">Visualisierungen</h1>
 <div class="container text-center">
-  <h1>Visualisierungen</h1>
   <div id="accordion">
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card my-3" style="background-color: #d8f3dc">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button
-                class="btn btn-link"
-                data-toggle="collapse"
-                data-target="#collapseOne"
-                aria-expanded="false"
-                aria-controls="collapseOne"
-              >
-                Wann sind die Kunst am Bau-Werke auf dem Campus entstanden?
-              </button>
-            </h5>
-          </div>
-
-          <div
-            id="collapseOne"
-            class="collapse"
-            aria-labelledby="headingOne"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              <div
-                class="flourish-embed flourish-gantt"
-                data-src="visualisation/20429865"
-              >
-                <script
-                  src="https://public.flourish.studio/resources/embed.js"
-                  onerror="this.outerHTML = '<img src=\'/Visualisierungen_Screenshots/Visualisierungen_Flourish_Aufstellungszeiträume.jpg\' alt=\'Fallback Gantt Chart\' style=\'width: 100%;\' >'"
-                ></script>
-                <!-- Fallback Screenshot -->
-                <noscript>
-                  <img
-                    src="/Visualisierungen_Screenshots/Visualisierungen_Flourish_Aufstellungszeiträume.jpg"
-                    width="100%"
-                    alt="gantt visualization"
-                  />
-                </noscript>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card my-3" style="background-color: #b7e4c7">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Wie ist das Verhältnis von Außen-/und Innenbereich?
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseTwo"
-            class="collapse"
-            aria-labelledby="headingTwo"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              <div
-                class="flourish-embed flourish-chart"
-                data-src="visualisation/20447596"
-              >
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <noscript
-                  ><img
-                    src="https://public.flourish.studio/visualisation/20447596/thumbnail"
-                    width="100%"
-                    alt="chart visualization"
-                /></noscript>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card my-3" style="background-color: #95d5b2">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Welche Materialien wurden verwendet?
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseThree"
-            class="collapse"
-            aria-labelledby="headingThree"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              <div
-                class="flourish-embed flourish-word-cloud"
-                data-src="visualisation/20448421"
-              >
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <noscript
-                  ><img
-                    src="https://public.flourish.studio/visualisation/20448421/thumbnail"
-                    width="100%"
-                    alt="word-cloud visualization"
-                /></noscript>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="section-background-1">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card my-3" style="background-color: #95d5b2">
+        <h2 class="color-scheme-text mt-4">
+          Wissenswertes über die Kunst auf dem Campus:
+        </h2>
+      </div>
+      <!--First Card:-->
+      <div class="row">
+        <div class="col col-lg-8">
+          <div class="card my-3" id="visualization_card_1">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Wann sind die Kunst am Bau-Werke auf dem Campus entstanden?
+                </button>
+              </h5>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <div
+                  class="flourish-embed flourish-gantt"
+                  data-src="visualisation/20429865"
+                >
+                  <script
+                    src="https://public.flourish.studio/resources/embed.js"
+                    onerror="this.outerHTML = '<img src=\'/Visualisierungen_Screenshots/Visualisierungen_Flourish_Aufstellungszeiträume.jpg\' alt=\'Fallback Gantt Chart\' style=\'width: 100%;\' >'"
+                  ></script>
+                  <!-- Fallback Screenshot -->
+                  <noscript>
+                    <img
+                      src="/Visualisierungen_Screenshots/Visualisierungen_Flourish_Aufstellungszeiträume.jpg"
+                      width="100%"
+                      alt="gantt visualization"
+                    />
+                  </noscript>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 text-center">
+          <img
+            src="/Illustrationen/toutes_directions.png"
+            class="img-fluid custom-image"
+            alt="Thinking illustration"
+          />
+          <p class="centered-text" data-aos="fade-left"></p>
+        </div>
+      </div>
+
+      <!--Second Card:-->
+      <div class="row middle-row">
+        <div class="col col-lg-8 offset-lg-2">
+          <div class="card my-3" id="visualization_card_2">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Wie ist das Verhältnis von Außen-/und Innenbereich?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <div
+                  class="flourish-embed flourish-chart"
+                  data-src="visualisation/20447596"
+                >
+                  <script src="https://public.flourish.studio/resources/embed.js"></script>
+                  <noscript
+                    ><img
+                      src="https://public.flourish.studio/visualisation/20447596/thumbnail"
+                      width="100%"
+                      alt="chart visualization"
+                  /></noscript>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Third Card:-->
+      <div class="row mb-2">
+        <div class="col-12 col-lg-4">
+          <img
+            src="/Illustrationen/wasserrelief_a.png"
+            class="img-fluid custom-image"
+            alt="Drawing illustration"
+          />
+        </div>
+        <div class="col-12 col-lg-8 text-center">
+          <div class="card my-3" id="visualization_card_3">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Welche Materialien wurden verwendet?
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <div
+                  class="flourish-embed flourish-word-cloud"
+                  data-src="visualisation/20448421"
+                >
+                  <script src="https://public.flourish.studio/resources/embed.js"></script>
+                  <noscript
+                    ><img
+                      src="https://public.flourish.studio/visualisation/20448421/thumbnail"
+                      width="100%"
+                      alt="word-cloud visualization"
+                  /></noscript>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="row">
+        <h2 class="color-scheme-text mt-5">Wissenswertes über die Künstler:</h2>
+      </div>
+      <div class="section-background-2">
+      <!--Fourth Card:-->
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div class="card my-3" id="visualization_card_4">
             <div class="card-header" id="headingFour">
               <h5 class="mb-0">
                 <button
                   class="btn btn-link collapsed"
                   data-toggle="collapse"
                   data-target="#collapseFour"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-controls="collapseFour"
                 >
                   Wie heißen die Künstler?
@@ -143,7 +180,7 @@
             </div>
             <div
               id="collapseFour"
-              class="collapse"
+              class="collapse show"
               aria-labelledby="headingFour"
               data-parent="#accordion"
             >
@@ -164,9 +201,19 @@
             </div>
           </div>
         </div>
+        <div class="col-12 col-lg-4">
+          <img
+            src="/Illustrationen/stickman_campus.png"
+            class="img-fluid custom-image"
+            alt="Painting illustration"
+          />
+        </div>
+      </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card my-3" style="background-color: #b7e4c7">
+      <!--Fifth Card:-->
+      <div class="row middle-row">
+        <div class="col-12 col-lg-8 offset-lg-2">
+          <div class="card my-3" id="visualization_card_5">
             <div class="card-header" id="headingFive">
               <h5 class="mb-0">
                 <button
@@ -187,7 +234,6 @@
               data-parent="#accordion"
             >
               <div class="card-body">
-
                 <div
                   class="flourish-embed flourish-bar-chart-race"
                   data-src="visualisation/20447741"
@@ -204,9 +250,19 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card my-3" style="background-color: #d8f3dc">
+      <!--Sixth Card:-->
+      <div class="row">
+        <div class="col-12 col-lg-4 text-center">
+          <img
+            src="/Illustrationen/stickman_graffiti.png"
+            class="img-fluid custom-image"
+            alt="Writing illustration"
+          />
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="card my-3" id="visualization_card_6">
             <div class="card-header" id="headingSix">
               <h5 class="mb-0">
                 <button

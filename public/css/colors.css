@@ -1,0 +1,28 @@
+:root {
+
+    --color-main: #458c85;
+    --color-main-transparent: rgba(69, 140, 133, 0.8); /* Transparent version of main color */
+
+    /* Matching gradient palette */
+    --color-matching-gradient-2: #288899;
+    --color-matching-gradient-3: #3180a9;
+    --color-matching-gradient-4: #5a75ac;
+    --color-matching-gradient-5: #8365a0;
+    --color-matching-gradient-6: #a05483;
+  
+    /* Small switch palette */
+    --color-small-switch-2: #d8e6df;
+    --color-small-switch-3: #48826a;
+  
+    /* Skip shade gradient */
+    --color-skip-shade-gradient-2: #58af96;
+    --color-skip-shade-gradient-3: #7ad3a0;
+    --color-skip-shade-gradient-4: #aaf5a3;
+  
+    /* Shades */
+    --color-shades-2: #27706a;
+    --color-shades-3: #005650;
+    --color-shades-4: #003c38;
+    --color-shades-5: #002521;
+  }
+  

@@ -1,9 +1,10 @@
 .color-scheme{
-    background: rgba(69, 140, 133, 0.8);  /* Main color for navbar, footbar etc.*/
+    background: var(--color-main-transparent); /* Main color for navbar, footbar etc.*/
 }
 
 .color-scheme-text{
-  color: rgba(69, 140, 133); /* Main color for headings etc.*/
+
+  color: var(--color-main);
 }
 
 p{
@@ -58,12 +59,6 @@ p{
   margin-left: 0.5rem; /* Use relative margin */
 }
 
-
-
-.card:hover{
-  transform: scaleX(1.1) scaleY(1.1); /* zoom effect on card that is being hovered */
-}
-
 .carousel-indicators .active {
   background-color: #6c757d !important; /*design of bottom indicators of image carousel */
 }
@@ -106,12 +101,7 @@ p{
 
 /* Hintergrundfarbe grau für den Container */
 .custom-bg-grey {
-  background-color: rgb(224, 222, 222);
-}
-
-/* Hintergrundfarbe grau für den Container */
-.custom-bg-grey-opaque {
-  background-color: rgba(224, 222, 222, 0.7);
+  background-color: var(--color-small-switch-2);
 }
 
 /* Zentrierung des Containers */
@@ -156,4 +146,26 @@ p{
 
 .hidden {
   display: none;
+}
+
+.custom-image {
+  max-height: 200px; /*Make all images of equal size*/
+  height: auto;
+}
+
+.middle-row {
+  margin-bottom: 70px;
+}
+
+.section-background-1 {
+  background: url("/Illustrationen/beautiful-abstract-background-hand-drawn-water-color-spots.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.section-background-2 {
+  background: url("/Illustrationen/1096.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 20px;
 }

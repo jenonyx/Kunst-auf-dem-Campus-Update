@@ -16,14 +16,15 @@ const navLinks = {
     home: '/',
     map: '/map',
     visualizations: '/visualizations',
-    about: '/about'
+    about: '/about',
+    quellen: '/quellen'
 };
   
 
 // Routes:
 app.get('/', (req, res) => {
     let activePage = 'home';
-    res.render('home', { navLinks, activePage });
+    res.render('home', { navLinks, activePage }); // Pass the navigation links to the EJS template
 });
 
 app.get('/map', (req, res) => {
@@ -41,7 +42,17 @@ app.get('/about', (req, res) => {
     res.render('about', { navLinks, activePage });
 });
 
+app.get('/quellen', (req, res) => {
+    let activePage = 'quellen';
+    res.render('quellen', { navLinks, activePage });
+});
 
-app.listen(3000, () => {
+app.get('/stories/:path', (req, res) => {
+    const { path } = req.params;    // Extract the path parameter
+    res.render(`stories/${path}`); // Dynamically render the EJS file
+  });
+  
+
+app.listen(3000, () => { // Start the server on port 3000
     console.log("Listening on port 3000");
 })
