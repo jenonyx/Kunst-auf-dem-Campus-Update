@@ -30,7 +30,7 @@ Follow the instructions below to set up and run the project on your local machin
    
    &#8594; Since the server listens to incoming network connection on port 3000, type "localhost:3000" in the address bar to open the project
 
-   &#8594; You should see the homepage now with the following elements ():
+   &#8594; You should see the homepage now with the following elements:
    - title screen
    - Description Texts
    - clickable image carousel
