@@ -1,17 +1,4 @@
-
-// Load JSON data and return the text for a given key
-async function getTextOrImage(key) {
-  try {
-    const response = await fetch('JSON/carousel.json'); // Pfad prüfen
-    const data = await response.json();
-    console.log("Loaded JSON data:", data); // Debug: JSON-Inhalt anzeigen
-    return data[key] || "Text not found: " + key;
-  } catch (error) {
-    console.error('Error loading JSON:', error);
-    return "Error loading text";
-  }
-}
-
+import { getTextOrImage } from './app.js';
         // Select all clickable cards
   const cards = document.querySelectorAll('.card.clickable');
 
@@ -37,9 +24,9 @@ cards.forEach(card => {
       const textKey = `carousel-card${cardId}-text`;
       const imageKey = `carousel-card${cardId}-image`;
 
-      const title = await getTextOrImage(titleKey);
-      const description = await getTextOrImage(textKey);
-      const imageUrl = await getTextOrImage(imageKey);
+      const title = await getTextOrImage(titleKey, 'carousel');
+      const description = await getTextOrImage(textKey, 'carousel');
+      const imageUrl = await getTextOrImage(imageKey, 'carousel');
 
       // Update the display with the fetched data
       titleText.textContent = title;

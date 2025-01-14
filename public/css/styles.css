@@ -7,6 +7,16 @@
   color: var(--color-main);
 }
 
+.darker-bg-color{
+  background: #616161;
+  color: #ffffff; /* Main color for text elements */
+}
+
+.default-bg-color{
+  background: #ffffff;
+}
+
+
 p{
   color: #3f3f3f; /* Main color for text elements */
 }

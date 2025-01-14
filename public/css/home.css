@@ -95,3 +95,29 @@
     color: var(--color-matching-gradient-6)
 
   }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.main {
+    flex: 3;
+}
+
+
+.main p {
+    margin-bottom: .75rem;
+}
+
+
+.intro-img {
+  width: 300px;
+  height: 300px;
+  float: left;
+  shape-outside: circle() margin-box;
+  shape-margin: 10px;
+  padding: 10px;
+} 
