@@ -15,12 +15,13 @@ app.use(config.baseUrl, indexRouter); // Mount the app on the base URL
 
 // Define the navigation links:
 const navLinks = {
-    home: '/',
-    map: '/map',
-    visualizations: '/visualizations',
-    about: '/about',
-    quellen: '/quellen'
+    home: config.baseUrl + '/',
+    map: config.baseUrl + '/map',
+    visualizations: config.baseUrl + '/visualizations',
+    about: config.baseUrl + '/about',
+    quellen: config.baseUrl + '/quellen'
 };
+
   
 
 // Routes:
