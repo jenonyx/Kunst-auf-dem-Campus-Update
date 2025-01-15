@@ -1,10 +1,10 @@
-<% layout('/layout/boilerplate.ejs') %>
+<% layout('layout/boilerplate.ejs') %>
 <h1 class="text-center color-scheme-text custom-bg-grey">
   Entdecke eine Geschichte
 </h1>
 <div class="map-container">
   <img
-    src="/Illustrationen/map.png"
+    src="Illustrationen/map.png"
     alt="Map"
     style="width: 100%; display: block"
   />
@@ -52,7 +52,7 @@
 
       try {
         // Fetch the EJS-rendered content from the server
-        const response = await fetch(`/kunstaufdemcampus/stories/${path}`);
+        const response = await fetch(`stories/${path}`);
         if (response.ok) {
           const content = await response.text();
           infoBox.innerHTML = content;

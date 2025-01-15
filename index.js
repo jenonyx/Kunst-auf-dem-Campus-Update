@@ -11,23 +11,22 @@ app.set('views', path.join(__dirname, 'views'));
 
 var indexRouter = express.Router();
 app.use(express.static(path.join(__dirname, 'public')));
-// Serve static files under /kunstaufdemcampus
-app.use(config.baseUrl, express.static(path.join(__dirname, 'public')));
+// Serve static files under the /public directory
+app.use("/", express.static(path.join(__dirname, 'public')));
 
 // Mount the dynamic routes AFTER static files
-app.use(config.baseUrl, indexRouter);
+app.use("/", indexRouter);
 
 
 // Define the navigation links:
 const navLinks = {
-    home: config.baseUrl + '/',
-    map: config.baseUrl + '/map',
-    visualizations: config.baseUrl + '/visualizations',
-    about: config.baseUrl + '/about',
-    quellen: config.baseUrl + '/quellen'
+    home: '/',
+    map: 'map',
+    visualizations: 'visualizations',
+    about: 'about',
+    quellen: 'quellen'
 };
 
-  
 
 // Routes:
 indexRouter.get('/', (req, res) => {
