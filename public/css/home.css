@@ -96,6 +96,21 @@
 
   }
 
+  .subtitle-link {
+    text-decoration: none; /* Remove default underline */
+    color: inherit; /* Inherit the text color from the parent header */
+  }
+  
+  .subtitle-link:hover {
+    text-decoration: underline; /* Optional: Add underline or other effects on hover */
+    color: var(--color-matching-gradient-hover); /* Optional: Custom hover color */
+  }
+  
+  .subtitle-link:focus {
+    outline: none; /* Optional: Remove focus outline */
+  }
+  
+
   .wrapper {
     display: flex;
     flex-wrap: wrap;

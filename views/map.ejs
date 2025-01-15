@@ -52,7 +52,7 @@
 
       try {
         // Fetch the EJS-rendered content from the server
-        const response = await fetch(`/stories/${path}`);
+        const response = await fetch(`/kunstaufdemcampus/stories/${path}`);
         if (response.ok) {
           const content = await response.text();
           infoBox.innerHTML = content;
