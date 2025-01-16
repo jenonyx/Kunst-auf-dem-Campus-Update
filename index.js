@@ -11,7 +11,7 @@ app.engine('ejs', engine);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.locals.baseUrl = baseUrl;
+app.locals.basePath = baseUrl;
 
 var indexRouter = express.Router();
 // Serve static files under the /public directory
