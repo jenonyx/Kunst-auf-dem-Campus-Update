@@ -5,7 +5,7 @@
     width: 100%;
     height: 100vh;
     /* Height scales with viewport height */
-    background-image: url(/Images/keramikwand.jpeg);
+    background-image: url(../Images/keramikwand.jpeg);
     background-size: cover;
     background-position: center;
     /* Center the image for better scaling */
@@ -58,7 +58,7 @@
     /* Use viewport height 
     background-size: cover;
     background-position: center; /* Center the background image */
-    background-image: url(Bilderkarussell/galaxie.jpeg);
+    background-image: url(../Bilderkarussell/galaxie.jpeg);
     display: flex;
     justify-content: center;
     align-items: center;

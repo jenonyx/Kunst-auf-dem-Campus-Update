@@ -66,14 +66,14 @@
 }
 
 .section-background-1 {
-  background: url("/Illustrationen/beautiful-abstract-background-hand-drawn-water-color-spots.jpg") no-repeat center center;
+  background: url("../Illustrationen/beautiful-abstract-background-hand-drawn-water-color-spots.jpg") no-repeat center center;
   background-size: cover;
   padding: 20px;
   margin-bottom: 60px;
 }
 
 .section-background-2 {
-  background: url("/Illustrationen/1096.jpg") no-repeat 50% 40%;
+  background: url("../Illustrationen/1096.jpg") no-repeat 50% 40%;
   background-size: cover;
   padding: 20px;
 }

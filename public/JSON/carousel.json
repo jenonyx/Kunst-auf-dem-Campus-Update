@@ -1,28 +1,28 @@
  {
     "carousel-card1-header": "Fotodruck",
     "carousel-card1-text": "Dieser Fotodruck befindet sich neben den Treppen, die vom Forumsplatz hoch zum Eingang der Universitätsbibliothek führen. Er zeigt die Galaxie NGC 2336 und wurde von der Fakultät für Physik und Astronomie angebracht.",
-    "carousel-card1-image": "Bilderkarussell/galaxie.jpeg",
+    "carousel-card1-image": "../Bilderkarussell/galaxie.jpeg",
     "carousel-card2-header": "Reproduktion",
     "carousel-card2-text": "Diese Reproduktion von Pablo Picassos “Guernica” befindet sich neben dem Eingang der Universitätsbibliothek. Ursprünglich wurde bereits 1984 eine Reproduktion des berühmten Werkes von Studierenden der Friedensinitiative der Fachschaft Medizin angefertigt. Nachdem diese aber 1998 durch ein Bauvorhaben zerstört wurde, entstand vier Jahre später die heute zu betrachtende Reproduktion angeregt durch die Senatskommission “Gedenken an der Ruhr-Universität Bochum”.",
-    "carousel-card2-image": "Bilderkarussell/guernica.jpg",
+    "carousel-card2-image": "../Bilderkarussell/guernica.jpg",
     "carousel-card3-header": "Kunst am Bau (Wandgestaltung)",
     "carousel-card3-text": "Diese Keramikwand befindet sich im Außenbereich des Hörsaalzentrum Ost und wurde 1974 vom französischen Maler und Grafiker Victor Vasarely realisiert. Nachdem sie aufgrund von Beschädigungen jahrelang mit einer Plane bedeckt war, wurde sie 2015 aufwändig restauriert und ist seitdem wieder für die Öffentlichkeit zugänglich. Kunst am Bau-Werke, die fest mit den Gebäuden der RUB verbunden sind, gehören dem Bau- und Liegenschaftsbetrieb NRW (BLB).",
-    "carousel-card3-image": "Bilderkarussell/keramikwand.jpg",
+    "carousel-card3-image": "../Bilderkarussell/keramikwand.jpg",
     "carousel-card4-header": "Kunst am Bau (Skulptur)",
     "carousel-card4-text": "Die Skulptur “Two Open Rectangles Excentric Triangular Section, Variation VII” wurde 1977 vom US-amerikanischen Künstler George Rickey realisiert. Sie befindet sich auf dem Forumsplatz vor den Kunstsammlungen. Die beiden Rechtecke aus Edelstahl werden durch den Wind in Schwingung gebracht und befinden sich so dauerhaft in Bewegung. Eigentümerin der Kunst am Bau-Werke, die nicht fest mit den Gebäuden verbunden sind, ist die Ruhr-Universität.",
-    "carousel-card4-image": "Bilderkarussell/skulptur.jpg",
+    "carousel-card4-image": "../Bilderkarussell/skulptur.jpg",
     "carousel-card5-header": "Graffiti-Freifläche",
     "carousel-card5-text": "Die Graffiti-Freifläche befindet sich an der Zufahrt zur RUB unterhalb der Gerhard-Petschelt-Brücke. Auf den Graffiti-Freiflächen der Stadt Bochum dürfen Sprayer:innen legal sprühen. Die Freifläche an der RUB hat sich inzwischen zu einer “Hall of Fame” der regionalen und überregionalen Graffiti-Szene entwickelt.",
-    "carousel-card5-image": "Bilderkarussell/freifläche.jpg",
+    "carousel-card5-image": "../Bilderkarussell/freifläche.jpg",
     "carousel-card6-header": "Illegale Graffiti",
     "carousel-card6-text": "Neben der Graffiti-Freifläche, auf der legal gesprüht werden darf, finden sich auf dem Campus der Ruhr-Universität natürlich auch zahlreiche illegale Graffiti. Dieses Beispiel befindet sich im Außenbereich des Hörsaalzentrum Ost.",
-    "carousel-card6-image": "Bilderkarussell/graffiti.jpg",
+    "carousel-card6-image": "../Bilderkarussell/graffiti.jpg",
     "carousel-card7-header": "Gebäude-Verschönerung",
     "carousel-card7-text": "Hinter dem HZO findet man zwischen Betongängen, -wänden und -treppen die Verschönerung eines Gangs. Die Wolken wurden 2014 von der damaligen Leitung des Bereichs Bildende Kunst des Musischen Zentrums und ihrem Team produziert.",
-    "carousel-card7-image": "Bilderkarussell/wolken.jpg",
+    "carousel-card7-image": "../Bilderkarussell/wolken.jpg",
     "carousel-card8-header": "Wandmalerei",
     "carousel-card8-text": "Die Künstlergruppe Brigade Luis Corvalán verewigte in den 1970er Jahren (vermutlich ca. 1976) ein Gedenken an den politischen Widerstand in Chile gegen die Militärdiktatur (1973-1990). Die Wandmalerei illustriert ein Gedicht von Paul Neruda. Sie befindet sich mit der Front ins Lottental gerichtet an der Südseite des Gebäudes HGA zwischen Audimax und GA, ist jedoch heute aufgrund von Verwitterung und mangelnder Pflege kaum noch zu erkennen.",
-    "carousel-card8-image": "Bilderkarussell/chile.jpg"
+    "carousel-card8-image": "../Bilderkarussell/chile.jpg"
  }
 
 

@@ -16,7 +16,7 @@ body {
     position: absolute;
     width: 40px; /* Pin size */
     height: 40px;
-    background-image: url('/Icons/teal.png'); /* Pin image */
+    background-image: url('../Icons/teal.png'); /* Pin image */
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -78,7 +78,7 @@ body {
   
   
   .map-pin.active {
-    background-image: url('/Icons/pink.png'); 
+    background-image: url('../Icons/pink.png'); 
   }
 
   .map-pin.active::before {
