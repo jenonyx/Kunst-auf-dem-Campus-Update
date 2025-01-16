@@ -58,7 +58,7 @@
     /* Use viewport height 
     background-size: cover;
     background-position: center; /* Center the background image */
-    background-image: url(/Bilderkarussell/galaxie.jpeg);
+    background-image: url(Bilderkarussell/galaxie.jpeg);
     display: flex;
     justify-content: center;
     align-items: center;

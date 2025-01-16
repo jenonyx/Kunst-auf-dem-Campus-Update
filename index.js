@@ -10,9 +10,8 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 var indexRouter = express.Router();
-app.use(express.static(path.join(__dirname, 'public')));
 // Serve static files under the /public directory
-app.use("/", express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Mount the dynamic routes AFTER static files
 app.use("/", indexRouter);
@@ -24,6 +23,7 @@ const navLinks = {
     map: 'map',
     visualizations: 'visualizations',
     about: 'about',
+    datenschutz: 'datenschutz',
     quellen: 'quellen'
 };
 
@@ -47,6 +47,11 @@ indexRouter.get('/visualizations', (req, res) => {
 indexRouter.get('/about', (req, res) => {
     let activePage = 'about';
     res.render('about', { navLinks, activePage });
+});
+
+indexRouter.get('/datenschutz', (req, res) => {
+    let activePage = 'datenschutz';
+    res.render('datenschutz', { navLinks, activePage });
 });
 
 indexRouter.get('/quellen', (req, res) => {
