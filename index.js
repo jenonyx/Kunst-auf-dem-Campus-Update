@@ -3,15 +3,19 @@ const app = express();
 const path = require('path');
 const engine = require('ejs-mate');
 const config = require('./config/config.js'); // Update the routes depending on the location of the project
+const baseUrl = config.baseUrl; // Access the baseUrl property
+
 // use ejs-locals for all ejs templates:
 app.engine('ejs', engine);
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+app.locals.baseUrl = baseUrl;
+
 var indexRouter = express.Router();
 // Serve static files under the /public directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(baseUrl, express.static(path.join(__dirname, 'public')));
 
 // Mount the dynamic routes AFTER static files
 app.use("/", indexRouter);
@@ -19,12 +23,12 @@ app.use("/", indexRouter);
 
 // Define the navigation links:
 const navLinks = {
-    home: '/',
-    map: 'map',
-    visualizations: 'visualizations',
-    about: 'about',
-    datenschutz: 'datenschutz',
-    quellen: 'quellen'
+    home: `${baseUrl}`,
+    map: `${baseUrl}/map`,
+    visualizations: `${baseUrl}/visualizations`,
+    about: `${baseUrl}/about`,
+    datenschutz: `${baseUrl}/datenschutz`,
+    quellen: `${baseUrl}/quellen`
 };
 
 
