@@ -19,7 +19,7 @@ app.use("/", indexRouter);
 
 // Define the navigation links:
 const navLinks = {
-    home: '/',
+    home: '/kunstaufdemcampus/',
     map: 'map',
     visualizations: 'visualizations',
     about: 'about',
@@ -29,7 +29,7 @@ const navLinks = {
 
 
 // Routes:
-indexRouter.get('/', (req, res) => {
+indexRouter.get('/kunstaufdemcampus/', (req, res) => {
     let activePage = 'home';
     res.render('home', { navLinks, activePage }); // Pass the navigation links to the EJS template
 });
