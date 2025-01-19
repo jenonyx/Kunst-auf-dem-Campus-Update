@@ -41,10 +41,12 @@
 
 
 .card:hover {
+  
   background: var(--color-small-switch-2);
+  /*
   transform: scale(1.08); /* Slight zoom */
-  box-shadow: 8px 15px 20px rgba(0, 0, 0, 0.25); /* Depth effect */
-  transition: all 0.3s ease; /* Smooth transition */
+  /*box-shadow: 8px 15px 20px rgba(0, 0, 0, 0.25); /* Depth effect */
+ /* transition: all 0.3s ease; /* Smooth transition */ 
 }
 
 

@@ -1,5 +1,6 @@
 .color-scheme{
     background: var(--color-main-transparent); /* Main color for navbar, footbar etc.*/
+    color: #ffffff;
 }
 
 .color-scheme-text{
