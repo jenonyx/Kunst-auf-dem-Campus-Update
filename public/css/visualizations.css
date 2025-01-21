@@ -8,20 +8,30 @@
 }
 
 
-#visualization_card_1, #visualization_card_4, #visualization_card_7 {
+#visualization_card_1, #visualization_card_4, #visualization_card_7,
+#visualization_description_1, #visualization_description_4, #visualization_description_7 {
   /*background-color: var(--color-matching-gradient-3);*/
   background: linear-gradient(90deg, var(--color-matching-gradient-3), var(--color-matching-gradient-4) );
 
   box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
 }
 
-#visualization_card_2, #visualization_card_5 {
+/*temp change*/
+/*#visualization_description_1{
+  background: var(--color-small-switch-2);
+  box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
+}*/
+
+
+#visualization_card_2, #visualization_card_5,
+#visualization_description_2, #visualization_description_5 {
   /*background-color: var(--color-matching-gradient-4);*/
   background: linear-gradient(90deg, var(--color-matching-gradient-4), var(--color-matching-gradient-5) );
   box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
 }
 
-#visualization_card_3, #visualization_card_6 {
+#visualization_card_3, #visualization_card_6,
+#visualization_description_3, #visualization_description_6 {
   /*background-color: var(--color-matching-gradient-5);*/
   background: linear-gradient(90deg, var(--color-matching-gradient-5), var(--color-matching-gradient-6) );
   box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
@@ -38,6 +48,8 @@
   color: white;
   font-size: large;
 }
+
+/*temp*/
 
 
 .card:hover {

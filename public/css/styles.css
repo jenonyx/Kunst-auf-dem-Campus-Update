@@ -1,3 +1,8 @@
+.test{
+  background: var(--color-main); /* Main color for navbar, footbar etc.*/
+  color: #ffffff;
+}
+
 .color-scheme{
     background: var(--color-main-transparent); /* Main color for navbar, footbar etc.*/
     color: #ffffff;
@@ -28,6 +33,10 @@
 
 p{
   color: #3f3f3f; /* Main color for text elements */
+}
+
+.text-light{
+  color: #ffffff; /* Main color for text elements */
 }
 
 .accordion > *{
@@ -90,6 +99,9 @@ p{
   font-size: x-large; /*larger text size for navbar links */
 }
 
+.nav-item{
+  margin-left: 20px; /* Spacing between links */
+}
 .hidden {
   display: none;
 }
