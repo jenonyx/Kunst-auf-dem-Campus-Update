@@ -100,6 +100,16 @@
     text-decoration: none; /* Remove default underline */
     color: inherit; /* Inherit the text color from the parent header */
   }
+
+  #subtitle-1-link {
+    text-decoration: none;
+    color: var(--color-matching-gradient-4); /* Optional: Custom color for the first subtitle */
+  }
+
+  #subtitle-1-link:hover {
+    text-decoration: underline;
+    color: var(--color-matching-gradient-4); /* Optional: Custom color for the first subtitle */
+  }
   
   .subtitle-link:hover {
     text-decoration: underline; /* Optional: Add underline or other effects on hover */
