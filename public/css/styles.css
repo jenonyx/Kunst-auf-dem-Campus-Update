@@ -3,6 +3,14 @@
     color: #ffffff;
 }
 
+.color-scheme-shadow{
+  background: var(--color-main-transparent); /* Main color for navbar, footbar etc.*/
+  border-radius: 15%;
+  color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Glow effect */
+
+}
+
 .color-scheme-text{
 
   color: var(--color-main);
@@ -67,7 +75,11 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertikale Zentrierung des Textes */
-  width: 80%; /* 80% der Breite des Containers */
+  text-align: justify;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #navbar-span{
@@ -83,3 +95,22 @@ p{
 }
 
 
+.quote-container {
+  display: flex; /* Align image and text horizontally */
+  align-items: flex-start; /* Align the image with the top of the text */
+  gap: 1rem; /* Add some spacing between the image and the text */
+}
+
+.quote-img {
+  width: 2rem; /* Adjust the size of the image as needed */
+  height: auto; /* Keep the aspect ratio */
+}
+
+.scaled-down-img{
+  width: 50%; 
+  height: auto; /* Keep the aspect ratio */
+}
+
+.card-body{
+  text-align: left;
+}
