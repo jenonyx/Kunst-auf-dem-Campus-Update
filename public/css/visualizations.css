@@ -16,6 +16,13 @@
   box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
 }
 
+/*temp change*/
+/*#visualization_description_1{
+  background: var(--color-small-switch-2);
+  box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
+}*/
+
+
 #visualization_card_2, #visualization_card_5,
 #visualization_description_2, #visualization_description_5 {
   /*background-color: var(--color-matching-gradient-4);*/
@@ -41,6 +48,8 @@
   color: white;
   font-size: large;
 }
+
+/*temp*/
 
 
 .card:hover {

@@ -1,3 +1,8 @@
+.test{
+  background: var(--color-main); /* Main color for navbar, footbar etc.*/
+  color: #ffffff;
+}
+
 .color-scheme{
     background: var(--color-main-transparent); /* Main color for navbar, footbar etc.*/
     color: #ffffff;
@@ -94,6 +99,9 @@ p{
   font-size: x-large; /*larger text size for navbar links */
 }
 
+.nav-item{
+  margin-left: 20px; /* Spacing between links */
+}
 .hidden {
   display: none;
 }
