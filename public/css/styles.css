@@ -57,6 +57,7 @@ p{
   font-size: 12px;
 }
 
+
 .lighter-colored-text{
   color: #adb5bd;
 }
@@ -125,4 +126,8 @@ p{
 
 .card-body{
   text-align: left;
+}
+
+.move-up{
+  margin-top: -15%;
 }
