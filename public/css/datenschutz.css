@@ -1,0 +1,16 @@
+.headerdt {
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+}
+
+.uldt {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    color: #444;
+}
+
+.listdt {
+    margin: 0.5rem 0;
+}
