@@ -1,64 +1,90 @@
-.test{
-  background: var(--color-main); /* Main color for navbar, footbar etc.*/
+.test {
+  background: var(--color-main);
+  /* Main color for navbar, footbar etc.*/
   color: #ffffff;
 }
 
-.color-scheme{
-    background: var(--color-main-transparent); /* Main color for navbar, footbar etc.*/
-    color: #ffffff;
+body {
+  /*font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;*/
+  text-align: justify;
 }
 
-.color-scheme-shadow{
-  background: var(--color-main-transparent); /* Main color for navbar, footbar etc.*/
+.color-scheme {
+  background: var(--color-main-transparent);
+  /* Main color for navbar, footbar etc.*/
+  color: #ffffff;
+}
+
+.color-scheme-shadow {
+  background: var(--color-main-transparent);
+  /* Main color for navbar, footbar etc.*/
   border-radius: 15%;
   color: #ffffff;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Glow effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  /* Glow effect */
 
 }
 
-.color-scheme-text{
+.custom-bg-grey-shadow {
+  background: var(--color-small-switch-2);
+  /* Main color for navbar, footbar etc.*/
+  border-radius: 15%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  /* Glow effect */
+
+}
+
+.color-scheme-text {
 
   color: var(--color-main);
 }
 
-.darker-bg-color{
+.darker-bg-color {
   background: #616161;
-  color: #ffffff; /* Main color for text elements */
+  color: #ffffff;
+  /* Main color for text elements */
 }
 
-.default-bg-color{
+.default-bg-color {
   background: #ffffff;
 }
 
 
-p{
-  color: #3f3f3f; /* Main color for text elements */
+p {
+  color: #3f3f3f;
+  /* Main color for text elements */
 }
 
-.text-light{
-  color: #ffffff; /* Main color for text elements */
+.text-light {
+  color: #ffffff;
+  /* Main color for text elements */
 }
 
-.accordion > *{
+.accordion>* {
   background: rgba(69, 140, 133, 0.70);
 }
 
 .footer .nav-link {
-  color: #cdcbcb; /* Default link color */
-  margin: 0 10px; /* Spacing between links */
+  color: #cdcbcb;
+  /* Default link color */
+  margin: 0 10px;
+  /* Spacing between links */
 }
 
 .footer .nav-link.active {
-  color: #ffffff; /* Highlight active link */
+  color: #ffffff;
+  /* Highlight active link */
   font-weight: bold;
 }
 
-.description-text{
+.description-text {
   font-size: 12px;
 }
 
 
-.lighter-colored-text{
+.lighter-colored-text {
   color: #adb5bd;
 }
 
@@ -70,13 +96,20 @@ p{
 /* Zentrierung des Containers */
 .centered-text {
   display: flex;
-  flex-direction: column; /* Inhalte untereinander anordnen */
-  align-items: center; /* Zentriert Inhalte horizontal */
-  justify-content: center; /* Zentriert Inhalte vertikal */
-  text-align: center; /* Text horizontal zentrieren */
-  height: 100%; /* Nimmt die gesamte Höhe des Containers ein */
-  margin: auto; /* Gleicher Abstand nach oben und unten */
-  gap: 1rem; /* Optional: Abstand zwischen Absätzen */
+  flex-direction: column;
+  /* Inhalte untereinander anordnen */
+  align-items: center;
+  /* Zentriert Inhalte horizontal */
+  justify-content: center;
+  /* Zentriert Inhalte vertikal */
+  text-align: center;
+  /* Text horizontal zentrieren */
+  height: 100%;
+  /* Nimmt die gesamte Höhe des Containers ein */
+  margin: auto;
+  /* Gleicher Abstand nach oben und unten */
+  gap: 1rem;
+  /* Optional: Abstand zwischen Absätzen */
 }
 
 
@@ -84,7 +117,8 @@ p{
 .text-container {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertikale Zentrierung des Textes */
+  justify-content: center;
+  /* Vertikale Zentrierung des Textes */
   text-align: justify;
   padding-left: 10%;
   padding-right: 10%;
@@ -92,42 +126,52 @@ p{
   padding-bottom: 5%;
 }
 
-#navbar-span{
-  width: 50%;   /*make the default span width smaller for a more centered positioning of navbar links */
+#navbar-span {
+  width: 50%;
+  /*make the default span width smaller for a more centered positioning of navbar links */
 }
 
-.nav-links-text > *{
-  font-size: x-large; /*larger text size for navbar links */
+.nav-links-text>* {
+  font-size: x-large;
+  /*larger text size for navbar links */
 }
 
-.nav-item{
-  margin-left: 20px; /* Spacing between links */
+.nav-item {
+  margin-left: 20px;
+  /* Spacing between links */
 }
+
 .hidden {
   display: none;
 }
 
 
 .quote-container {
-  display: flex; /* Align image and text horizontally */
-  align-items: flex-start; /* Align the image with the top of the text */
-  gap: 1rem; /* Add some spacing between the image and the text */
+  display: flex;
+  /* Align image and text horizontally */
+  align-items: flex-start;
+  /* Align the image with the top of the text */
+  gap: 1rem;
+  /* Add some spacing between the image and the text */
 }
 
 .quote-img {
-  width: 2rem; /* Adjust the size of the image as needed */
-  height: auto; /* Keep the aspect ratio */
+  width: 2rem;
+  /* Adjust the size of the image as needed */
+  height: auto;
+  /* Keep the aspect ratio */
 }
 
-.scaled-down-img{
-  width: 50%; 
-  height: auto; /* Keep the aspect ratio */
+.scaled-down-img {
+  width: 50%;
+  height: auto;
+  /* Keep the aspect ratio */
 }
 
-.card-body{
+.card-body {
   text-align: left;
 }
 
-.move-up{
+.move-up {
   margin-top: -15%;
 }
