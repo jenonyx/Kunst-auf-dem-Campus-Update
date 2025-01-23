@@ -86,7 +86,8 @@
 
   }
 
-  .subtitle-2 {
+  .subtitle-2, 
+  #subtitle-2-link {
     color: var(--color-matching-gradient-5)
 
   }
@@ -97,23 +98,22 @@
   }
 
   .subtitle-link {
-    text-decoration: none; /* Remove default underline */
+    /*text-decoration: none; /* Remove default underline */
     color: inherit; /* Inherit the text color from the parent header */
   }
 
-  #subtitle-1-link {
-    text-decoration: none;
-    color: var(--color-matching-gradient-4); /* Optional: Custom color for the first subtitle */
-  }
 
-  #subtitle-1-link:hover {
+  #subtitle-2-link:hover {
     text-decoration: underline;
-    color: var(--color-matching-gradient-4); /* Optional: Custom color for the first subtitle */
+    color: var(--color-matching-gradient-5); /* Custom color for the first subtitle */
+    opacity: 0.8; /* Reduce opacity on hover */
   }
   
-  .subtitle-link:hover {
+  .subtitle-link:hover
+   {
     text-decoration: underline; /* Optional: Add underline or other effects on hover */
-    color: var(--color-matching-gradient-hover); /* Optional: Custom hover color */
+    color: inherit;
+    opacity: 0.8; /* Optional: Reduce opacity on hover */
   }
   
   .subtitle-link:focus {
@@ -139,8 +139,8 @@
 
 
 .intro-img {
-  width: 300px;
-  height: 300px;
+  width: 20%;
+  height: 20%;
   float: left;
   shape-outside: circle() margin-box;
   shape-margin: 10px;

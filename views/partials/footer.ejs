@@ -2,22 +2,37 @@
   <div class="container-fluid">
     <ul class="nav justify-content-center">
       <li class="nav-item">
-        <a 
-          class="nav-link <%= activePage === 'impressum' ? 'active' : '' %>" 
+        <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/
+        "
+        >
+          <img
+            src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+"
+            alt="CC License Button"
+          />
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link <%= activePage === 'impressum' ? 'active' : '' %>"
           href="https://www.ruhr-uni-bochum.de/de/impressum"
-        >Impressum</a>
+          >Impressum</a
+        >
       </li>
       <li class="nav-item">
-        <a 
-          class="nav-link <%= activePage === 'datenschutz' ? 'active' : '' %>" 
+        <a
+          class="nav-link <%= activePage === 'datenschutz' ? 'active' : '' %>"
           href="<%= navLinks.datenschutz %>"
-        >Datenschutz</a>
+          >Datenschutz</a
+        >
       </li>
       <li class="nav-item">
-        <a 
-          class="nav-link <%= activePage === 'quellen' ? 'active' : '' %>" 
+        <a
+          class="nav-link <%= activePage === 'quellen' ? 'active' : '' %>"
           href="<%= navLinks.quellen %>"
-        >Quellen</a>
+          >Quellen</a
+        >
       </li>
     </ul>
   </div>
