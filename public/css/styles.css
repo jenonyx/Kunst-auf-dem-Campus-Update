@@ -1,14 +1,15 @@
 .test {
   background: var(--color-main);
   /* Main color for navbar, footbar etc.*/
-  color: #ffffff;
+  /*color: #ffffff;*/
 }
 
 body {
-  /*font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
-  font-style: normal;*/
+  font-style: normal;
   text-align: justify;
+  color: #3f3f3f;
 }
 
 .color-scheme {
@@ -52,10 +53,7 @@ body {
 }
 
 
-p {
-  color: #3f3f3f;
-  /* Main color for text elements */
-}
+
 
 .text-light {
   color: #ffffff;
@@ -174,4 +172,24 @@ p {
 
 .move-up {
   margin-top: -15%;
+}
+
+.link {
+  color: var(--color-matching-gradient-5);/* Default link color */
+  font-weight: bold;
+}
+
+.link:hover {
+  color: var(--color-matching-gradient-6);/* Hover effect */
+}
+
+
+.footer .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75); /* Change to a hover color, e.g., yellow */
+}
+
+.footer .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensure all items, including the image, are vertically centered */
 }
