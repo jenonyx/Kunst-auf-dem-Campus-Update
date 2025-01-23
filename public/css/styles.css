@@ -35,6 +35,12 @@ p{
   color: #3f3f3f; /* Main color for text elements */
 }
 
+.headersm {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+
 .text-light{
   color: #ffffff; /* Main color for text elements */
 }
@@ -126,3 +132,5 @@ p{
 .card-body{
   text-align: left;
 }
+
+
