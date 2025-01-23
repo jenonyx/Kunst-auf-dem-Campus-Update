@@ -55,10 +55,15 @@ body {
 
 
 
-.text-light {
-  color: #ffffff;
-  /* Main color for text elements */
+.headersm {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
 }
+
+.text-light{
+  color: #ffffff; /* Main color for text elements */
+
 
 .accordion>* {
   background: rgba(69, 140, 133, 0.70);
@@ -170,6 +175,7 @@ body {
   text-align: left;
 }
 
+
 .move-up {
   margin-top: -15%;
 }
@@ -193,3 +199,4 @@ body {
   justify-content: center;
   align-items: center; /* Ensure all items, including the image, are vertically centered */
 }
+
