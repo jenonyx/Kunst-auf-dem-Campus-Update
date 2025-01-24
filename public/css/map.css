@@ -1,93 +1,126 @@
 body {
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  /* Full width of the map */
+  height: auto;
+  /* Ensures it scales correctly */
+  overflow: hidden;
+}
+
+/*TODO: schauen ob map pin größe okay ist und ob die dynamisch an bildschirmgröße angepasst werden sollen*/
+.map-pin {
+  position: absolute;
+  width: 40px;
+  /* Pin size */
+  height: 40px;
+  background-image: url('../Icons/teal.png');
+  /* Pin image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  /* Center the pin */
+  top: 50%;
+  /* Position dynamically based on percentage */
+  left: 50%;
+}
+
+/*TODO: schauen ob glow effekt okay ist - soll es nur beim hovern oder die ganze zeit pulsieren??*/
+.map-pin::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  /* The glow size */
+  height: 80px;
+  background-color: var(--color-main-transparent);
+  /* Glow color */
+  border-radius: 50%;
+  transform: translate(-55%, -50%);
+  /* Center the glow */
+  z-index: -1;
+  /* Ensure the glow is behind the pin */
+  animation: pulse 1.5s infinite;
+  /* Add the pulsing effect*/
+}
+
+.map-pin:hover::before {
+  animation: pulse 1.5s infinite;
+  /* Add the pulsing effect*/
+}
+
+/* Pulsing Effect in The background of each pin*/
+@keyframes pulse {
+  0% {
+    opacity: 0.7;
+    transform: translate(-55%, -50%) scale(1);
+    /* Adjust the scale */
   }
 
-  .map-container {
-    position: relative;
-    width: 100%; /* Full width of the map */
-    height: auto; /* Ensures it scales correctly */
-    overflow: hidden;
+  50% {
+    opacity: 0.5;
+    transform: translate(-55%, -50%) scale(1.2);
   }
 
-  /*TODO: schauen ob map pin größe okay ist und ob die dynamisch an bildschirmgröße angepasst werden sollen*/
-  .map-pin {
-    position: absolute;
-    width: 40px; /* Pin size */
-    height: 40px;
-    background-image: url('../Icons/teal.png'); /* Pin image */
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    transform: translate(-50%, -50%); /* Center the pin */
-    top: 50%; /* Position dynamically based on percentage */
-    left: 50%; 
+  100% {
+    opacity: 0.7;
+    transform: translate(-55%, -50%) scale(1);
   }
-  
-  /*TODO: schauen ob glow effekt okay ist - soll es nur beim hovern oder die ganze zeit pulsieren??*/
-  .map-pin::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80px; /* The glow size */
-    height: 80px; 
-    background-color: var(--color-main-transparent); /* Glow color */
-    border-radius: 50%; 
-    transform: translate(-55%, -50%); /* Center the glow */
-    z-index: -1; /* Ensure the glow is behind the pin */
-    animation: pulse 1.5s infinite; /* Add the pulsing effect*/
+}
+
+/*Pulsing Effect for the active pin */
+@keyframes pulse-2 {
+  0% {
+    opacity: 0.7;
+    transform: translate(-55%, -50%) scale(1);
   }
 
- .map-pin:hover::before {
-    animation: pulse 1.5s infinite; /* Add the pulsing effect*/
-  }
-  
-  /* Pulsing Effect in The background of each pin*/
-  @keyframes pulse {
-    0% {
-      opacity: 0.7;
-      transform: translate(-55%, -50%) scale(1); /* Adjust the scale */
-    }
-    50% {
-      opacity: 0.5;
-      transform: translate(-55%, -50%) scale(1.2); 
-    }
-    100% {
-      opacity: 0.7;
-      transform: translate(-55%, -50%) scale(1);
-    }
-  }
-  
-  /*Pulsing Effect for the active pin */
-  @keyframes pulse-2 {
-    0% {
-      opacity: 0.7;
-      transform: translate(-55%, -50%) scale(1);
-    }
-    50% {
-      opacity: 0.5;
-      transform: translate(-55%, -50%) scale(1.2);
-    }
-    100% {
-      opacity: 0.7;
-      transform: translate(-55%, -50%) scale(1);
-    }
-  }
-  
-  
-  .map-pin.active {
-    background-image: url('../Icons/pink.png'); 
+  50% {
+    opacity: 0.5;
+    transform: translate(-55%, -50%) scale(1.2);
   }
 
-  .map-pin.active::before {
-    background-color: rgba(255, 20, 147, 0.5); /* Pink glow color */
-    animation: pulse-2 1.5s infinite; /* Persistent pink pulsating glow */
+  100% {
+    opacity: 0.7;
+    transform: translate(-55%, -50%) scale(1);
   }
-  
+}
 
-  .info-box {
-    text-align: center;
-    border: 1px solid #ccc;
+
+.map-pin.active {
+  background-image: url('../Icons/pink.png');
+}
+
+.map-pin.active::before {
+  background-color: rgba(255, 20, 147, 0.5);
+  /* Pink glow color */
+  animation: pulse-2 1.5s infinite;
+  /* Persistent pink pulsating glow */
+}
+
+
+.info-box {
+  text-align: justify;
+  border: 1px solid #ccc;
+}
+
+
+.emoji {
+  font-size: 6rem;
+  margin-top: 0;
+  /* Default for smaller screens */
+}
+
+@media (min-width: 768px) {
+  .emoji {
+    margin-top: -4rem;
+    /* Applies only for screens md or larger */
   }
+}
