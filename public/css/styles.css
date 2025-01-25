@@ -61,8 +61,9 @@ body {
   display: flex;
 }
 
-.text-light{
-  color: #ffffff; /* Main color for text elements */
+.text-light {
+  color: #ffffff;
+  /* Main color for text elements */
 }
 
 .accordion>* {
@@ -88,7 +89,7 @@ body {
 
 
 .lighter-colored-text {
-  color: #adb5bd;
+  color: #858585;
 }
 
 /* Hintergrundfarbe grau für den Container */
@@ -123,10 +124,17 @@ body {
   justify-content: center;
   /* Vertikale Zentrierung des Textes */
   text-align: justify;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.row-container {
+  /* Vertikale Zentrierung des Textes */
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
 }
 
 #navbar-span {
@@ -171,6 +179,12 @@ body {
   /* Keep the aspect ratio */
 }
 
+
+.scaled-down-img-2 {
+  width: 40%;
+  height: auto;
+  /* Keep the aspect ratio */
+}
 .card-body {
   text-align: left;
 }
@@ -180,23 +194,43 @@ body {
   margin-top: -15%;
 }
 
+.move-down{
+  margin-bottom: -50%;
+}
+
+/* Default size for small screens */
+.arrow-icon {
+  max-height: 0; /* Set a default size for small screens */
+}
+
+/* Larger screens: Override the size */
+@media (min-width: 768px) {
+  .arrow-icon {
+    max-height: 80%; /* Custom size for larger screens */
+  }
+}
+
+
 .link {
-  color: var(--color-matching-gradient-5);/* Default link color */
+  color: var(--color-matching-gradient-5);
+  /* Default link color */
   font-weight: bold;
 }
 
 .link:hover {
-  color: var(--color-matching-gradient-6);/* Hover effect */
+  color: var(--color-matching-gradient-6);
+  /* Hover effect */
 }
 
 
 .footer .nav-link:hover {
-  color: rgba(255, 255, 255, 0.75); /* Change to a hover color, e.g., yellow */
+  color: rgba(255, 255, 255, 0.75);
+  /* Change to a hover color, e.g., yellow */
 }
 
 .footer .nav {
   display: flex;
   justify-content: center;
-  align-items: center; /* Ensure all items, including the image, are vertically centered */
+  align-items: center;
+  /* Ensure all items, including the image, are vertically centered */
 }
-
