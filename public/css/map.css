@@ -106,12 +106,6 @@ body {
 }
 
 
-.info-box {
-  text-align: justify;
-  border: 1px solid #ccc;
-}
-
-
 .emoji {
   font-size: 6rem;
   margin-top: 0;
@@ -123,4 +117,11 @@ body {
     margin-top: -4rem;
     /* Applies only for screens md or larger */
   }
+}
+
+.info-box{
+
+  /* Without this, the button will be aligned to the top of the page
+  instead of bottom of navbar when scrolled */
+  scroll-margin-top: 60px;
 }

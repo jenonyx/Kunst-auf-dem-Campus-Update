@@ -1,31 +1,4 @@
 import { getTextOrImage } from './app.js';
-// Select all buttons in the accordion
-//VISUALIZAtIONS - Page
-/*const accordionButtons = document.querySelectorAll("#accordion .btn-link");
-
-// Add click event listener to each button
-accordionButtons.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    // Prevent default behavior
-    event.preventDefault();
-
-    // Get the associated collapsible content
-    const targetId = button.getAttribute("data-target");
-    const content = document.querySelector(targetId);
-
-    // Close all other collapsible elements
-    document.querySelectorAll("#accordion .collapse").forEach((item) => {
-      if (item !== content) {
-        item.classList.remove("show");
-      }
-    });
-
-    // Toggle the 'show' class for the clicked element
-    content.classList.toggle("show");
-  });
-});*/
-
-// Load JSON data and return the text for a given key
 
 const allTextBoxes = document.querySelectorAll('.p-data-visualizations-text');
 
@@ -41,3 +14,42 @@ const allTextBoxes = document.querySelectorAll('.p-data-visualizations-text');
     }
   }
 })();
+
+
+// Select all cards with the 'visualizations-card' class
+const cards = document.querySelectorAll('.visualizations-card');
+
+// Loop through each card and add click listeners
+cards.forEach((card) => {
+  card.addEventListener('click', () => {
+    // Toggle the 'fullscreen' class
+    card.classList.add('fullscreen');
+
+    // Add a close button dynamically
+    if (!card.querySelector('.close-btn')) {
+      const closeButton = document.createElement('button');
+      closeButton.textContent = '✖';
+      closeButton.classList.add('close-btn', 'text-light');
+      card.appendChild(closeButton);
+
+      // Close the card when the button is clicked
+      closeButton.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent triggering the card click again
+        card.classList.remove('fullscreen');
+        closeButton.remove(); // Remove the button
+      });
+    }
+  });
+});
+
+
+// Close fullscreen on Escape key alternatively
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.fullscreen').forEach((card) => {
+      card.classList.remove('fullscreen');
+      const closeButton = card.querySelector('.close-btn');
+      if (closeButton) closeButton.remove();
+    });
+  }
+});

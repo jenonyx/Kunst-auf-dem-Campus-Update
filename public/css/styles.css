@@ -1,5 +1,6 @@
 .test {
   background: var(--color-main);
+  /*background: linear-gradient(90deg, var(--color-main), var(--color-matching-gradient-2))*/
   /* Main color for navbar, footbar etc.*/
   /*color: #ffffff;*/
 }
@@ -26,6 +27,14 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   /* Glow effect */
 
+}
+
+.color-scheme-border{
+  border: 3px solid var(--color-main);
+  border-radius: 90%;
+  /*box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);*/
+  margin-left: 10% ;
+  margin-right: 10% ;
 }
 
 .custom-bg-grey-shadow {
