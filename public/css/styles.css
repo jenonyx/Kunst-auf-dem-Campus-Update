@@ -1,7 +1,8 @@
 .test {
-    background: var(--color-main);
-    /* Main color for navbar, footbar etc.*/
-    /*color: #ffffff;*/
+  background: var(--color-main);
+  /*background: linear-gradient(90deg, var(--color-main), var(--color-matching-gradient-2))*/
+  /* Main color for navbar, footbar etc.*/
+  /*color: #ffffff;*/
 }
 
 body {
@@ -26,6 +27,14 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     /* Glow effect */
 
+}
+
+.color-scheme-border{
+  border: 3px solid var(--color-main);
+  border-radius: 90%;
+  /*box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);*/
+  margin-left: 10% ;
+  margin-right: 10% ;
 }
 
 .custom-bg-grey-shadow {
@@ -93,7 +102,7 @@ body {
 
 
 .lighter-colored-text {
-    color: #adb5bd;
+  color: #858585;
 }
 
 /* Hintergrundfarbe grau für den Container */
@@ -126,15 +135,22 @@ body {
 /* Text-Container für zusätzliche Flexibilität */
 
 .text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* Vertikale Zentrierung des Textes */
-    text-align: justify;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Vertikale Zentrierung des Textes */
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.row-container {
+  /* Vertikale Zentrierung des Textes */
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
 }
 
 #navbar-span {
@@ -179,6 +195,12 @@ body {
     /* Keep the aspect ratio */
 }
 
+
+.scaled-down-img-2 {
+  width: 40%;
+  height: auto;
+  /* Keep the aspect ratio */
+}
 .card-body {
     text-align: left;
 }
@@ -187,6 +209,23 @@ body {
 .move-up {
     margin-top: -15%;
 }
+
+.move-down{
+  margin-bottom: -50%;
+}
+
+/* Default size for small screens */
+.arrow-icon {
+  max-height: 0; /* Set a default size for small screens */
+}
+
+/* Larger screens: Override the size */
+@media (min-width: 768px) {
+  .arrow-icon {
+    max-height: 80%; /* Custom size for larger screens */
+  }
+}
+
 
 .link {
     color: var(--color-matching-gradient-5); /* Default link color */
@@ -207,4 +246,5 @@ body {
     justify-content: center;
     align-items: center; /* Ensure all items, including the image, are vertically centered */
 }
+
 
