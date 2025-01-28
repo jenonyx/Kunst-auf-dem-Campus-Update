@@ -214,6 +214,11 @@ body {
   margin-bottom: -50%;
 }
 
+.move-right{
+    padding-left: 2%;
+    z-index: 10;
+  }
+
 /* Default size for small screens */
 .arrow-icon {
   max-height: 0; /* Set a default size for small screens */
