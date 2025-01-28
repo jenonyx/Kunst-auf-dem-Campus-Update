@@ -17,6 +17,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.arrow-container{
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
 .content-container {
     margin: 20px auto;
     padding: 20px;
