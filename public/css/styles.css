@@ -252,4 +252,8 @@ body {
     align-items: center; /* Ensure all items, including the image, are vertically centered */
 }
 
+.listdt::marker {
+    color: var(--color-main);
+    font-size: 1.2em;
+}
 

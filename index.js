@@ -24,7 +24,8 @@ const navLinks = {
     visualizations: 'visualizations',
     about: 'about',
     datenschutz: 'datenschutz',
-    quellen: 'quellen'
+    quellen: 'quellen',
+    impressum: 'impressum'
 };
 
 
@@ -57,6 +58,11 @@ indexRouter.get('/datenschutz', (req, res) => {
 indexRouter.get('/quellen', (req, res) => {
     let activePage = 'quellen';
     res.render('quellen', { navLinks, activePage });
+});
+
+indexRouter.get('/impressum', (req, res) => {
+    let activePage = 'impressum';
+    res.render('impressum', { navLinks, activePage });
 });
 
 indexRouter.get('/stories/:path', (req, res) => {
