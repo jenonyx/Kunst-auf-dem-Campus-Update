@@ -1,3 +1,5 @@
+import { getTextOrImage } from './app.js';
+
 // Select all cards with the 'visualizations-card' class
 const cards = document.querySelectorAll(".visualizations-card");
 
@@ -49,3 +51,18 @@ function handleFlourishError(embedId, fallbackImageId) {
     fallbackImage.style.display = "block";
   }
 }
+
+const allTextBoxes = document.querySelectorAll('.p-data-visualizations-text');
+
+(async () => {
+  for (let currNum = 1; currNum <= allTextBoxes.length; currNum++) {
+    try {
+      let textKey = `data-visualization-text-${currNum}`;
+      console.log(textKey);
+      const description = await getTextOrImage(textKey, 'data-visualizations');
+      allTextBoxes[currNum - 1].textContent = description;
+    } catch (error) {
+      console.error('Error loading JSON:', error);
+    }
+  }
+})();
