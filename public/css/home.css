@@ -3,12 +3,10 @@
     margin-top: 0;
     position: relative;
     width: 100%;
-    height: 100vh;
-    /* Height scales with viewport height */
+    height: 100vh; /* Height scales with viewport height */
     background-image: url(../Images/keramikwand.jpeg);
     background-size: cover;
-    background-position: center;
-    /* Center the image for better scaling */
+    background-position: center; /* Center the image for better scaling */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    /* Adjust width to be a percentage of the screen */
-    padding: 2rem;
-    /* Add padding for spacing instead of fixed height */
+    width: 70%; /* Adjust width to be a percentage of the screen */
+    padding: 2rem; /* Add padding for spacing */
     background-color: rgba(69, 140, 133, 0.70);
 }
 
@@ -29,11 +25,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
-    /* Relative spacing */
+    gap: 1.5rem; /* Relative spacing */
     flex: 0 0 auto;
-    margin-left: 1rem;
-    /* Use relative margin */
+    margin-left: 1rem; /* Use relative margin */
 }
 
 .image .text-wrapper {
@@ -41,28 +35,11 @@
     align-self: stretch;
     font-family: "Inter-Bold", Helvetica;
     font-weight: 700;
-    color: #ffffff;
-    font-size: 5vw;
-    /* Font size scales with viewport width */
-    letter-spacing: -0.02em;
-    /* Scaled relative letter spacing */
-    line-height: 1.2;
-    /* Use relative line height */
-    margin-left: 0.5rem;
-    /* Use relative margin */
+    color: var(--color-light-1);
+    font-size: 5vw; /* Font size scales with viewport width */
+    margin-left: 0.5rem; /* Use relative margin */
 }
 
-.carousel-image {
-    width: 100%;
-    height: 100vh;
-    /* Use viewport height 
-    background-size: cover;
-    background-position: center; /* Center the background image */
-    background-image: url(../Bilderkarussell/galaxie.jpeg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .carousel-indicators .active {
     background-color: #6c757d !important;
@@ -76,12 +53,11 @@
 
 .carousel-indicators button:hover {
     background-color: #6c757d;
-    /*hover effect of bottom indicators of image carousel */
 }
 
 
 
-.subtitle-1 {
+.subtitle-1 { 
     color: var(--color-matching-gradient-4)
 
   }
@@ -98,7 +74,6 @@
   }
 
   .subtitle-link {
-    /*text-decoration: none; /* Remove default underline */
     color: inherit; /* Inherit the text color from the parent header */
   }
 
@@ -111,17 +86,17 @@
   
   .subtitle-link:hover
    {
-    text-decoration: underline; /* Optional: Add underline or other effects on hover */
-    color: inherit;
-    opacity: 0.8; /* Optional: Reduce opacity on hover */
+    text-decoration: underline; 
+    color: inherit; /* Inherit the text color from the parent header */
+    opacity: 0.8; /* Reduce opacity on hover */
   }
   
   .subtitle-link:focus {
-    outline: none; /* Optional: Remove focus outline */
+    outline: none; /* Remove focus outline */
   }
   
 
-  .wrapper {
+  .wrapper { 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

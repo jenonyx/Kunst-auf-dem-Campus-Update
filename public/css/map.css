@@ -6,72 +6,56 @@ body {
 
 .map-container {
   position: relative;
-  width: 100%;
-  /* Full width of the map */
-  height: auto;
-  /* Ensures it scales correctly */
+  width: 100%; /* Full width of the page */
+  height: auto; /*correct scaling with the width */
   overflow: hidden;
 }
 
-/*TODO: schauen ob map pin größe okay ist und ob die dynamisch an bildschirmgröße angepasst werden sollen*/
 .map-pin {
   position: absolute;
-  width: 40px;
-  /* Pin size */
+  width: 40px; /* Pin size */
   height: 40px;
-  background-image: url('../Icons/teal.png');
-  /* Pin image */
+  background-image: url('../Icons/teal.png'); /* Pin image path*/
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-  transform: translate(-50%, -50%);
-  /* Center the pin */
-  top: 50%;
-  /* Position dynamically based on percentage */
-  left: 50%;
+  transform: translate(-50%, -50%); /* Center the pin */
+
 }
 
-/*TODO: schauen ob glow effekt okay ist - soll es nur beim hovern oder die ganze zeit pulsieren??*/
+/* Glow effect for each pin*/
 .map-pin::before {
   content: '';
-  position: absolute;
-  top: 50%;
+  position: absolute; 
+  top: 50%; /* center the glow horizontally and veritcally around the pin*/
   left: 50%;
-  width: 80px;
-  /* The glow size */
+  width: 80px;/* The glow size */
   height: 80px;
-  background-color: var(--color-main-transparent);
-  /* Glow color */
+  background-color: var(--color-main-transparent); /* Glow color */
   border-radius: 50%;
-  transform: translate(-55%, -50%);
-  /* Center the glow */
-  z-index: -1;
-  /* Ensure the glow is behind the pin */
-  animation: pulse 1.5s infinite;
-  /* Add the pulsing effect*/
+  z-index: -1; /* Ensure the glow is behind the pin */
+  animation: pulse 1.5s infinite; /* Add the pulsing effect*/
 }
 
 .map-pin:hover::before {
-  animation: pulse 1.5s infinite;
-  /* Add the pulsing effect*/
+  animation: pulse 1.5s infinite; /* Add the pulsing effect*/
 }
 
 /* Pulsing Effect in The background of each pin*/
 @keyframes pulse {
   0% {
     opacity: 0.7;
-    transform: translate(-55%, -50%) scale(1);
-    /* Adjust the scale */
+    transform: translate(-55%, -50%) scale(1); /*start with a scale of 1*/
   }
 
   50% {
     opacity: 0.5;
-    transform: translate(-55%, -50%) scale(1.2);
+    transform: translate(-55%, -50%) scale(1.2); /*scale to 1.2 at 50%*/
   }
 
   100% {
     opacity: 0.7;
-    transform: translate(-55%, -50%) scale(1);
+    transform: translate(-55%, -50%) scale(1); /*return to scale of 1*/
   }
 }
 
@@ -99,29 +83,24 @@ body {
 }
 
 .map-pin.active::before {
-  background-color: rgba(255, 20, 147, 0.5);
-  /* Pink glow color */
-  animation: pulse-2 1.5s infinite;
-  /* Persistent pink pulsating glow */
+  background-color: rgba(255, 20, 147, 0.5); /* Pink glow color */
+  animation: pulse-2 1.5s infinite; /* Persistent pink pulsating glow */
 }
 
 
 .emoji {
   font-size: 6rem;
-  margin-top: 0;
-  /* Default for smaller screens */
+  margin-top: 0; /* Default for smaller screens */
 }
 
 @media (min-width: 768px) {
   .emoji {
-    margin-top: -4rem;
-    /* Applies only for screens md or larger */
+    margin-top: -4rem; /* Applies only for screens md or larger */
   }
 }
 
 .info-box{
-
-  /* Without this, the button will be aligned to the top of the page
+  /* Without this, the highest element will be aligned to the top of the page
   instead of bottom of navbar when scrolled */
   scroll-margin-top: 60px;
 }
