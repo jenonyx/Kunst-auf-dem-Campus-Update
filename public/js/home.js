@@ -24,7 +24,7 @@ cards.forEach((card) => {
       // Add the active class to the clicked card
       card.classList.add("custom-bg-grey");
 
-      // Fetch the title and description dynamically using the cardId
+      // Fetch the title, description and image dynamically using the cardId
       const titleKey = `carousel-card${cardId}-header`;
       const textKey = `carousel-card${cardId}-text`;
       const imageKey = `carousel-card${cardId}-image`;

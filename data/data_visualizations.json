@@ -4,6 +4,17 @@
     "data-visualization-text-3": "Für diese Wortwolke wurden die verwendeten Materialien zu Überkategorien wie z. B. „Beton“ oder „Edelstahl“ zusammengefasst. Die meisten Kunstwerke bestehen dabei aus mehreren verschiedenen Materialien. Je häufiger ein bestimmtes Material in der Kunst am Bau auf dem Campus verwendet wurde, desto größer erscheint es in der Wortwolke. An dieser Darstellung wird besonders deutlich, dass die Kunst am Bau sich in die Architektur des Campus einfügt und Materialien wie Beton oder Stahl besonders häufig Verwendung finden.",
     "data-visualization-text-4": "Während die meisten Künstler nur ein Werk zur Kunst am Bau auf dem RUB-Campus beigetragen haben, gibt es auch einige Namen, die häufiger vertreten sind. Von Henryk Dywan stammen z. B. insgesamt sieben Werke auf dem Campus, darunter auch das Betonrelief „RUHRUNIVERSITÄT“ über der Haupt-Ausfahrt des Parkgebäudes. Viele der anderen Künstler, die mehr als ein Werk beigetragen haben, sind mit mehreren ähnlichen Werken auf dem Campus vertreten, so z.B. Adriaan Dekkers und Erwin Heerich mit jeweils drei Versorgungsschachtverkleidungen, Mischa Kuball mit zwei Leuchtschriftzügen oder Konsortium mit den drei Wandgestaltungen „Hope/Doom/Void“ (2014) an der Mensa.",
     "data-visualization-text-5": "Für diese Visualisierung haben wir außerdem recherchiert, welche Staatsangehörigkeit die verschiedenen Künstler haben. Während zwei Drittel der Künstler deutsche Staatsbürger sind, sind auch neun Künstler aus anderen Ländern vertreten. Bis auf den israelischen Künstler Yaacov Agam sind sie alle Staatsangehörige europäischer und nordamerikanischer Länder.",
-    "data-visualization-text-6": "Schließlich lässt sich noch die Beobachtung machen, dass die Kunst am Bau auf dem Campus der RUB ausschließlich von männlichen Künstlern geschaffen wurde. Interessant war diese Erkenntnis für uns vor allem vor dem Hintergrund, dass ein Großteil der Expert*innen, mit denen wir für unser Projekt gesprochen haben, Frauen waren."
-
+    "data-visualization-text-6": "Schließlich lässt sich noch die Beobachtung machen, dass die Kunst am Bau auf dem Campus der RUB ausschließlich von männlichen Künstlern geschaffen wurde. Interessant war diese Erkenntnis für uns vor allem vor dem Hintergrund, dass ein Großteil der Expert*innen, mit denen wir für unser Projekt gesprochen haben, Frauen waren.",
+    "data-visualization-image-1": "./Visualisierungen_Screenshots/Visualisierungen_Flourish_Aufstellungszeiträume.jpg",
+    "data-visualization-image-2": "./Visualisierungen_Screenshots/Visualisierungen_Flourish_Orte.jpg",
+    "data-visualization-image-3": "./Visualisierungen_Screenshots/Visualisierungen_Flourish_Materialien.png",
+    "data-visualization-image-4": "./Visualisierungen_Screenshots/Visualisierungen_Flourish_Künstler_Namen.jpg",
+    "data-visualization-image-5": "./Visualisierungen_Screenshots/Visualisierungen_Flourish_Künstler_Staatsangehörigkeit.jpg",
+    "data-visualization-image-6": "./Visualisierungen_Screenshots/Visualisierungen_Flourish_Künstler_Geschlecht.jpg",
+    "data-visualization-alt-image-1": "Visualisierung der Aufstellungszeiträume der Kunstwerke auf dem Campus der RUB",
+    "data-visualization-alt-image-2": "Visualisierung der Orte der Kunstwerke auf dem Campus der RUB",
+    "data-visualization-alt-image-3": "Visualisierung der Materialien der Kunstwerke auf dem Campus der RUB",
+    "data-visualization-alt-image-4": "Visualisierung der Künstler der Kunstwerke auf dem Campus der RUB",
+    "data-visualization-alt-image-5": "Visualisierung der Staatsangehörigkeit der Künstler der Kunstwerke auf dem Campus der RUB",
+    "data-visualization-alt-image-6": "Visualisierung des Geschlechts der Künstler der Kunstwerke auf dem Campus der RUB"
 }

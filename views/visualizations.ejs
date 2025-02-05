@@ -93,450 +93,337 @@
     </div>
 
     <!-- Visualizations -->
-    <div id="accordion">
-      <div class="row py-3">
-        <h2 class="color-scheme-text mt-4 text-center fw-bolder">
-          <!--subtitle-->
-          Visualisierungen zu den Kunstwerken:
-        </h2>
-      </div>
 
-      <!--first card with gantt-chart-->
-      <div
-        class="row py-4 first-row"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <div class="col col-lg-8">
-          <div class="card visualizations-card" id="visualization_card_1">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  Wann sind die Kunst am Bau-Werke auf dem Campus entstanden?
-                </button>
-              </h5>
-            </div>
-
-            <div
-              id="collapseOne"
-              class="collapse show"
-              data-card-number="1"
-              aria-labelledby="headingOne"
-              data-parent="#accordion"
-            >
-              <div class="card-body">
-                <div
-                  class="flourish-embed flourish-gantt"
-                  data-src="visualisation/21257048"
-                  onerror="this.outerHTML = '<img src=\'/Visualisierungen_Screenshots/Visualisierungen_Flourish_Aufstellungszeiträume.jpg\' alt=\'Fallback Gantt Chart\' style=\'width: 100%;\' >'"
-                >
-                  <script
-                    src="https://public.flourish.studio/resources/embed.js"
-                    onerror="this.outerHTML = '<img src=\'/Visualisierungen_Screenshots/Visualisierungen_Flourish_Aufstellungszeiträume.jpg\' alt=\'Fallback Gantt Chart\' style=\'width: 100%;\' >'"
-                  ></script>
-                  <!-- Fallback Screenshot -->
-                  <noscript>
-                    <img
-                      src="/Visualisierungen_Screenshots/Visualisierungen_Flourish_Aufstellungszeiträume.jpg"
-                      width="100%"
-                      alt="gantt visualization"
-                    />
-                  </noscript>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card" id="visualization_description_1">
-            <div class="card-body">
-              <p class="text-light p-data-visualizations-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                blanditiis cupiditate commodi, quam sapiente voluptatibus harum,
-                cum nam earum ullam corporis quos deleniti. Porro perferendis
-                consectetur vitae tempore in esse.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <hr class="color-scheme-border" />
-
-      <!--Second Card:-->
-      <div
-        class="row py-4 middle-row"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <div class="col-lg-4">
-          <div class="card" id="visualization_description_2">
-            <div class="card-body">
-              <p class="text-light p-data-visualizations-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                blanditiis cupiditate commodi, quam sapiente voluptatibus harum,
-                cum nam earum ullam corporis quos deleniti. Porro perferendis
-                consectetur vitae tempore in esse.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-8">
-          <div class="card visualizations-card" id="visualization_card_2">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Wie ist das Verhältnis von Außen-/und Innenbereich?
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseTwo"
-              class="collapse show"
-              data-card-number="2"
-              aria-labelledby="headingTwo"
-              data-parent="#accordion"
-            >
-              <div class="card-body">
-                <div
-                  class="flourish-embed flourish-chart"
-                  data-src="visualisation/20447596"
-                >
-                  <script src="https://public.flourish.studio/resources/embed.js"></script>
-                  <noscript
-                    ><img
-                      src="https://public.flourish.studio/visualisation/20447596/thumbnail"
-                      width="100%"
-                      alt="chart visualization"
-                  /></noscript>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <hr class="color-scheme-border" />
-
-      <!--Third Card:-->
-      <div
-        class="row py-4 last-row"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <div class="col-12 col-lg-8 text-center second-item">
-          <div class="card visualizations-card" id="visualization_card_3">
-            <div class="card-header" id="headingThree">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Welche Materialien wurden verwendet?
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseThree"
-              class="collapse show"
-              data-card-number="3"
-              aria-labelledby="headingThree"
-              data-parent="#accordion"
-            >
-              <div class="card-body">
-                <div
-                  class="flourish-embed flourish-word-cloud"
-                  data-src="visualisation/20448421"
-                >
-                  <script src="https://public.flourish.studio/resources/embed.js"></script>
-                  <noscript
-                    ><img
-                      src="https://public.flourish.studio/visualisation/20448421/thumbnail"
-                      width="100%"
-                      alt="word-cloud visualization"
-                  /></noscript>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card" id="visualization_description_3">
-            <div class="card-body">
-              <p class="text-light p-2 p-data-visualizations-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                blanditiis cupiditate commodi, quam sapiente voluptatibus harum,
-                cum nam earum ullam corporis quos deleniti. Porro perferendis
-                consectetur vitae tempore in esse.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--subtitle -->
-      <div class="row py-3">
-        <h2 class="color-scheme-text mt-5 text-center fw-bolder">
-          Visualisierungen zu den Künstlern:
-        </h2>
-      </div>
-
-      <!--Fourth Card:-->
-      <div
-        class="row py-4 first-row"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <div class="col-lg-4">
-          <div class="card" id="visualization_description_4">
-            <div class="card-body">
-              <p class="text-light p-2 p-data-visualizations-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                blanditiis cupiditate commodi, quam sapiente voluptatibus harum,
-                cum nam earum ullam corporis
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-8">
-          <div class="card visualizations-card" id="visualization_card_4">
-            <div class="card-header" id="headingFour">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#collapseFour"
-                  aria-expanded="true"
-                  aria-controls="collapseFour"
-                >
-                  Wie heißen die Künstler?
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseFour"
-              class="collapse show"
-              data-card-number="4"
-              aria-labelledby="headingFour"
-              data-parent="#accordion"
-            >
-              <div class="card-body">
-                <div
-                  class="flourish-embed flourish-hierarchy"
-                  data-src="visualisation/20444386"
-                >
-                  <script src="https://public.flourish.studio/resources/embed.js"></script>
-                  <noscript
-                    ><img
-                      src="https://public.flourish.studio/visualisation/20444386/thumbnail"
-                      width="100%"
-                      alt="hierarchy visualization"
-                  /></noscript>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <hr class="color-scheme-border" />
-
-      <!--Fifth Card:-->
-      <div
-        class="row py-4 middle-row"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <div class="col-lg-8">
-          <div class="card visualizations-card" id="visualization_card_5">
-            <div class="card-header" id="headingFive">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#collapseFive"
-                  aria-expanded="false"
-                  aria-controls="collapseFive"
-                >
-                  Woher kommen die Künstler?
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseFive"
-              class="collapse show"
-              data-card-number="5"
-              aria-labelledby="headingFive"
-              data-parent="#accordion"
-            >
-              <div class="card-body">
-                <div
-                  class="flourish-embed flourish-bar-chart-race"
-                  data-src="visualisation/20447741"
-                >
-                  <script src="https://public.flourish.studio/resources/embed.js"></script>
-                  <noscript
-                    ><img
-                      src="https://public.flourish.studio/visualisation/20447741/thumbnail"
-                      width="100%"
-                      alt="bar-chart-race visualization"
-                  /></noscript>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card" id="visualization_description_5">
-            <div class="card-body">
-              <p class="text-light p-2 p-data-visualizations-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                blanditiis cupiditate commodi, quam sapiente voluptatibus harum,
-                cum nam earum ullam corporis quos deleniti. Porro perferendis
-                consectetur
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <hr class="color-scheme-border" />
-
-      <!--Sixth Card:-->
-      <div
-        class="row py-4 last-row"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <div class="col-lg-4">
-          <div class="card" id="visualization_description_6">
-            <div class="card-body">
-              <p class="text-light p-2 p-data-visualizations-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                blanditiis cupiditate commodi, quam sapiente voluptatibus harum,
-                cum nam earum ullam corporis
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-8 second-item">
-          <div class="card visualizations-card" id="visualization_card_6">
-            <div class="card-header" id="headingSix">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-link collapsed"
-                  data-toggle="collapse"
-                  data-target="#collapseSix"
-                  aria-expanded="false"
-                  aria-controls="collapseSix"
-                >
-                  Welches Geschlecht haben die Künstler?
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseSix"
-              class="collapse show"
-              data-card-number="6"
-              aria-labelledby="headingSix"
-              data-parent="#accordion"
-            >
-              <div class="card-body">
-                <div
-                  class="flourish-embed flourish-pictogram mb-0"
-                  data-src="visualisation/20443926"
-                >
-                  <script src="https://public.flourish.studio/resources/embed.js"></script>
-                  <noscript
-                    ><img
-                      src="https://public.flourish.studio/visualisation/20443926/thumbnail"
-                      width="100%"
-                      alt="pictogram visualization"
-                  /></noscript>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--Seventh Card:-->
-      <!--<div class="row py-3">
-      <h2 class="color-scheme-text mt-5 text-center fw-bolder">
-        Fakten über die Interviewees:
+    <div class="row py-3">
+      <h2 class="color-scheme-text mt-4 text-center fw-bolder">
+        <!--subtitle-->
+        Visualisierungen zu den Kunstwerken:
       </h2>
     </div>
-    <div class="row py-3 first-row py-3">
-      <div class="col-12 col-lg-8">
-        <div class="card" id="visualization_card_7">
-          <div class="card-header" id="headingSeven">
+
+    <!--first card with gantt-chart-->
+    <div class="row py-4 first-row" data-aos="fade-up" data-aos-duration="1000">
+      <div class="col col-lg-8">
+        <div class="card visualizations-card" id="visualization_card_1">
+          <div class="card-header" id="headingOne">
             <h5 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseSeven"
-                aria-expanded="false"
-                aria-controls="collapseSeven"
-              >
-                Welches Geschlecht haben die Interviewees?
+              <button class="btn btn-link">
+                Wann sind die Kunst am Bau-Werke auf dem Campus entstanden?
               </button>
             </h5>
           </div>
-          <div
-            id="collapseSeven"
-            class="collapse show"
-            data-card-number="7"
-            aria-labelledby="headingSeven"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              <div
-                class="flourish-embed flourish-scatter"
-                data-src="visualisation/21051517"
-              >
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <noscript
-                  ><img
-                    src="https://public.flourish.studio/visualisation/21051517/thumbnail"
-                    width="100%"
-                    alt="pictogram visualization"
-                /></noscript>
-              </div>
+
+          <div class="card-body">
+            <div
+              class="flourish-embed flourish-gantt"
+              id="flourish-embed-1"
+              data-src="visualisation/21257048"
+            >
+              <script
+                src="https://public.flourish.studio/resources/embed.js"
+                onerror="handleFlourishError('flourish-embed-1', 'fallback-image-1')"
+              ></script>
+              <noscript
+                ><img
+                  src="https://public.flourish.studio/visualisation/21257048/thumbnail"
+                  width="100%"
+                  alt="gantt visualization"
+              /></noscript>
             </div>
+            <!-- Fallback-Bild -->
+            <img
+              src="<%= data['data-visualization-image-1'] %>"
+              alt="<%= data['data-visualization-alt-image-1'] %>"
+              class="fallback-image"
+              id="fallback-image-1"
+              style="display: none; width: 100%"
+            />
           </div>
         </div>
       </div>
+
       <div class="col-lg-4">
-        <div class="card" id="visualization_description_7">
+        <div class="card" id="visualization_description_1">
           <div class="card-body">
-            <p class="text-light p-2 p-data-visualizations-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-              blanditiis cupiditate commodi, quam sapiente voluptatibus harum,
-              cum nam earum ullam corporis
+            <p class="text-light p-data-visualizations-text">
+              <%- data['data-visualization-text-1'] %>
             </p>
           </div>
         </div>
       </div>
-    </div>-->
+    </div>
+
+    <hr class="color-scheme-border" />
+
+    <!-- Second Card: -->
+    <div
+      class="row py-4 middle-row"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="col-lg-4">
+        <div class="card" id="visualization_description_2">
+          <div class="card-body">
+            <p class="text-light p-data-visualizations-text">
+              <%- data['data-visualization-text-2'] %>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-8">
+        <div class="card visualizations-card" id="visualization_card_2">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link">
+                Wie ist das Verhältnis von Außen-/und Innenbereich?
+              </button>
+            </h5>
+          </div>
+          <div class="card-body">
+            <div
+              class="flourish-embed flourish-chart"
+              data-src="visualisation/20447596"
+              id="flourish-embed-2"
+            >
+              <script
+                src="https://public.flourish.studio/resources/embed.js"
+                onerror="handleFlourishError('flourish-embed-2', 'fallback-image-2')"
+              ></script>
+              <noscript>
+                <img
+                  src="https://public.flourish.studio/visualisation/20447596/thumbnail"
+                  width="100%"
+                  alt="chart visualization"
+                />
+              </noscript>
+            </div>
+
+            <!-- Fallback-Bild -->
+            <img
+              src="<%= data['data-visualization-image-2'] %>"
+              alt="<%= data['data-visualization-alt-image-2'] %>"
+              class="fallback-image"
+              id="fallback-image-2"
+              style="display: none; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="color-scheme-border" />
+
+    <!--Third Card:-->
+    <div class="row py-4 last-row" data-aos="fade-up" data-aos-duration="1000">
+      <div class="col-12 col-lg-8 text-center second-item">
+        <div class="card visualizations-card" id="visualization_card_3">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link">
+                Welche Materialien wurden verwendet?
+              </button>
+            </h5>
+          </div>
+          <div class="card-body">
+            <div
+              class="flourish-embed flourish-word-cloud"
+              id="flourish-embed-3"
+              data-src="visualisation/20448421"
+            >
+              <script
+                src="https://public.flourish.studio/resources/embed.js"
+                onerror="handleFlourishError('flourish-embed-3', 'fallback-image-3')"
+              ></script>
+              <noscript
+                ><img
+                  src="https://public.flourish.studio/visualisation/20448421/thumbnail"
+                  width="100%"
+                  alt="word-cloud visualization"
+              /></noscript>
+            </div>
+
+            <!-- Fallback-Bild -->
+            <img
+              src="<%= data['data-visualization-image-3'] %>"
+              alt="<%= data['data-visualization-alt-image-3'] %>"
+              class="fallback-image"
+              id="fallback-image-3"
+              style="display: none; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card" id="visualization_description_3">
+          <div class="card-body">
+            <p class="text-light p-2 p-data-visualizations-text">
+              <%- data['data-visualization-text-3'] %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--subtitle -->
+    <div class="row py-3">
+      <h2 class="color-scheme-text mt-5 text-center fw-bolder">
+        Visualisierungen zu den Künstlern:
+      </h2>
+    </div>
+
+    <!--Fourth Card:-->
+    <div class="row py-4 first-row" data-aos="fade-up" data-aos-duration="1000">
+      <div class="col-lg-4">
+        <div class="card" id="visualization_description_4">
+          <div class="card-body">
+            <p class="text-light p-2 p-data-visualizations-text">
+              <%- data['data-visualization-text-4'] %>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="card visualizations-card" id="visualization_card_4">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link">Wie heißen die Künstler?</button>
+            </h5>
+          </div>
+          <div class="card-body">
+            <div
+              class="flourish-embed flourish-hierarchy"
+              id="flourish-embed-4"
+              data-src="visualisation/20444386"
+            >
+              <script
+                src="https://public.flourish.studio/resources/embed.js"
+                onerror="handleFlourishError('flourish-embed-4', 'fallback-image-4')"
+              ></script>
+              <noscript
+                ><img
+                  src="https://public.flourish.studio/visualisation/20444386/thumbnail"
+                  width="100%"
+                  alt="hierarchy visualization"
+              /></noscript>
+            </div>
+
+            <!-- Fallback-Bild -->
+            <img
+              src="<%= data['data-visualization-image-4'] %>"
+              alt="<%= data['data-visualization-alt-image-4'] %>"
+              class="fallback-image"
+              id="fallback-image-4"
+              style="display: none; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="color-scheme-border" />
+
+    <!--Fifth Card:-->
+    <div
+      class="row py-4 middle-row"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="col-lg-8">
+        <div class="card visualizations-card" id="visualization_card_5">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link">Woher kommen die Künstler?</button>
+            </h5>
+          </div>
+          <div class="card-body">
+            <div
+              class="flourish-embed flourish-bar-chart-race"
+              id="flourish-embed-5"
+              data-src="visualisation/20447741"
+            >
+              <script
+                src="https://public.flourish.studio/resources/embed.js"
+                onerror="handleFlourishError('flourish-embed-5', 'fallback-image-5')"
+              ></script>
+              <noscript
+                ><img
+                  src="https://public.flourish.studio/visualisation/20447741/thumbnail"
+                  width="100%"
+                  alt="bar-chart-race visualization"
+              /></noscript>
+            </div>
+            <img
+              src="<%= data['data-visualization-image-5'] %>"
+              alt="<%= data['data-visualization-alt-image-5'] %>"
+              class="fallback-image"
+              id="fallback-image-5"
+              style="display: none; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card" id="visualization_description_5">
+          <div class="card-body">
+            <p class="text-light p-2 p-data-visualizations-text">
+              <%- data['data-visualization-text-5'] %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="color-scheme-border" />
+
+    <!--Sixth Card:-->
+    <div class="row py-4 last-row" data-aos="fade-up" data-aos-duration="1000">
+      <div class="col-lg-4">
+        <div class="card" id="visualization_description_6">
+          <div class="card-body">
+            <p class="text-light p-2 p-data-visualizations-text">
+              <%- data['data-visualization-text-6'] %>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8 second-item">
+        <div class="card visualizations-card" id="visualization_card_6">
+          <div class="card-header" id="headingSix">
+            <h5 class="mb-0">
+              <button class="btn btn-link">
+                Welches Geschlecht haben die Künstler?
+              </button>
+            </h5>
+          </div>
+          <div class="card-body">
+            <div
+              class="flourish-embed flourish-pictogram mb-0"
+              id="flourish-embed-6"
+              data-src="visualisation/20443926"
+            >
+              <script
+                src="https://public.flourish.studio/resources/embed.js"
+                onerror="handleFlourishError('flourish-embed-6', 'fallback-image-6')"
+              ></script>
+              <noscript
+                ><img
+                  src="https://public.flourish.studio/visualisation/20443926/thumbnail"
+                  width="100%"
+                  alt="pictogram visualization"
+              /></noscript>
+            </div>
+            <img
+              src="<%= data['data-visualization-image-6'] %>"
+              alt="<%= data['data-visualization-alt-image-6'] %>"
+              class="fallback-image"
+              id="fallback-image-6"
+              style="display: none; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<script type="module" src="js/app.js"></script>
-<script type="module" src="js/visualizations.js"></script>
+<script src="js/visualizations.js"></script>
