@@ -13,23 +13,15 @@
 #visualization_card_7,
 #visualization_description_1,
 #visualization_description_4 {
-  /*background-color: var(--color-matching-gradient-3);*/
   background: linear-gradient(90deg, var(--color-matching-gradient-3), var(--color-matching-gradient-4));
   box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
 }
-
-/*temp change*/
-/*#visualization_description_1{
-  background: var(--color-small-switch-2);
-  box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
-}*/
 
 
 #visualization_card_2,
 #visualization_card_5,
 #visualization_description_2,
 #visualization_description_5 {
-  /*background-color: var(--color-matching-gradient-4);*/
   background: linear-gradient(90deg, var(--color-matching-gradient-4), var(--color-matching-gradient-5));
   box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
 }
@@ -38,7 +30,6 @@
 #visualization_card_6,
 #visualization_description_3,
 #visualization_description_6 {
-  /*background-color: var(--color-matching-gradient-5);*/
   background: linear-gradient(90deg, var(--color-matching-gradient-5), var(--color-matching-gradient-6));
   box-shadow: 4px 9px 13px 0px rgba(0, 0, 0, 0.2);
 }
@@ -55,23 +46,17 @@
   font-size: large;
 }
 
-/*temp*/
-
-
 .card:hover {
 
   background: var(--color-small-switch-2);
-  transition: all 0.3s ease;
-  /* Smooth transition */
+  transition: all 0.3s ease; /* Smooth transition */
 }
 
 .visualizations-card:hover {
 
   background: linear-gradient(90deg, var(--color-main), var(--color-matching-gradient-2)) !important;
-  box-shadow: 8px 15px 20px rgba(184, 184, 184, 0.25);
-  /* Depth effect */
+  box-shadow: 8px 15px 20px rgba(184, 184, 184, 0.25);/* Depth effect */
   transition: all 0.3s ease;
-  /* Smooth transition */
 }
 
 /* Fullscreen card styles */
@@ -81,11 +66,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 9999;
-  background-color: white;
-  /* Optional: Adjust for visibility */
-  overflow: auto;
-  /* In case the content overflows */
+  z-index: 9999; /* Place card above anything else */
+  overflow: auto; /* In case the content overflows */
   transition: all 0.3s ease-in-out;
 }
 
@@ -102,35 +84,17 @@
 
 
 .card .btn:hover {
-  color: var(--color-main);
-  /* Button hover */
-  border-radius: 20px;
-  /* Rounded corners */
+  color: var(--color-main); /* Change text color on hover */
+  border-radius: 20px; /* Rounded corners */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  /* Glow effect */
   transition: all 0.3s ease;
 }
 
 .custom-image {
-  max-height: 200px;
-  /*Make all images of equal size*/
+  max-height: 200px; /*Make all images of equal size*/
   height: auto;
 }
 
 .middle-row {
-  /*margin-bottom: 70px;*/
   margin-bottom: 0px;
-}
-
-.section-background-1 {
-  background: url("../Illustrationen/beautiful-abstract-background-hand-drawn-water-color-spots.jpg") no-repeat center center;
-  background-size: cover;
-  padding: 20px;
-  margin-bottom: 60px;
-}
-
-.section-background-2 {
-  background: url("../Illustrationen/1096.jpg") no-repeat 50% 40%;
-  background-size: cover;
-  padding: 20px;
 }

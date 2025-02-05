@@ -10,20 +10,20 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     text-align: justify;
-    color: #3f3f3f;
+    color: var(--color-dark-1);
 }
 
 .color-scheme {
     background: var(--color-main-transparent);
     /* Main color for navbar, footbar etc.*/
-    color: #ffffff;
+    color: var(--color-light-1);
 }
 
 .color-scheme-shadow {
     background: var(--color-main-transparent);
     /* Main color for navbar, footbar etc.*/
     border-radius: 15%;
-    color: #ffffff;
+    color: var(--color-light-1);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     /* Glow effect */
 
@@ -53,12 +53,12 @@ body {
 
 .darker-bg-color {
     background: #616161;
-    color: #ffffff;
+    color: var(--color-light-1);
     /* Main color for text elements */
 }
 
 .default-bg-color {
-    background: #ffffff;
+    background: var(--color-light-1);
 }
 
 
@@ -75,7 +75,7 @@ body {
 }
 
 .text-light {
-    color: #ffffff; /* Main color for text elements */
+    color: var(--color-light-1); /* Main color for text elements */
 }
 
 
@@ -91,7 +91,7 @@ body {
 }
 
 .footer .nav-link.active {
-    color: #ffffff;
+    color: var(--color-light-1);
     /* Highlight active link */
     font-weight: bold;
 }
@@ -154,18 +154,15 @@ body {
 }
 
 #navbar-span {
-    width: 50%;
-    /*make the default span width smaller for a more centered positioning of navbar links */
+    width: 50%; /*make the default span width smaller for a more centered positioning of navbar links */
 }
 
 .nav-links-text > * {
-    font-size: x-large;
-    /*larger text size for navbar links */
+    font-size: x-large; /*larger text size for navbar links */
 }
 
 .nav-item {
-    margin-left: 20px;
-    /* Spacing between links */
+    margin-left: 20px; /* Spacing between links */
 }
 
 .hidden {
@@ -174,37 +171,31 @@ body {
 
 
 .quote-container {
-    display: flex;
-    /* Align image and text horizontally */
-    align-items: flex-start;
-    /* Align the image with the top of the text */
-    gap: 1rem;
-    /* Add some spacing between the image and the text */
+    display: flex;  /* Align image and text horizontally */
+    align-items: flex-start; /* Align the image with the top of the text */
+    gap: 1rem; /* Add some spacing between the image and the text */
 }
 
 .quote-img {
     width: 2rem;
     /* Adjust the size of the image as needed */
-    height: auto;
-    /* Keep the aspect ratio */
+    height: auto; /* Keep the aspect ratio */
 }
 
 .scaled-down-img {
     width: 50%;
     height: auto;
-    /* Keep the aspect ratio */
 }
 
 
 .scaled-down-img-2 {
   width: 40%;
-  height: auto;
-  /* Keep the aspect ratio */
+  height: auto; 
 }
+
 .card-body {
     text-align: left;
 }
-
 
 .move-up {
     margin-top: -15%;
@@ -219,9 +210,8 @@ body {
     z-index: 10;
   }
 
-/* Default size for small screens */
 .arrow-icon {
-  max-height: 0; /* Set a default size for small screens */
+  max-height: 0; /* Make the arrow disappear on small screens */
 }
 
 /* Larger screens: Override the size */
@@ -233,7 +223,7 @@ body {
 
 
 .link {
-    color: var(--color-matching-gradient-5); /* Default link color */
+    color: var(--color-matching-gradient-4); /* Default link color */
     font-weight: bold;
 }
 
@@ -243,7 +233,7 @@ body {
 
 
 .footer .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75); /* Change to a hover color, e.g., yellow */
+    color: rgba(255, 255, 255, 0.75); /* Change to a lighter hover color*/
 }
 
 .footer .nav {
@@ -253,7 +243,7 @@ body {
 }
 
 .listdt::marker {
-    color: var(--color-main);
+    color: var(--color-main); /* Custom color for list markers */
     font-size: 1.2em;
 }
 

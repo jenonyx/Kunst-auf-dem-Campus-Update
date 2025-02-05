@@ -3,6 +3,10 @@
     --color-main: #458c85;
     --color-main-transparent: rgba(69, 140, 133, 0.8); /* Transparent version of main color */
 
+        /* Main color for text and background elements */
+        --color-light-1: #ffffff;
+        --color-dark-1: #3f3f3f;
+
     /* Matching gradient palette */
     --color-matching-gradient-2: #288899;
     --color-matching-gradient-3: #3180a9;
